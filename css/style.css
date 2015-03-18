@@ -1,0 +1,45 @@
+/**** HEADER ****/
+.header{
+	max-width: 900px;
+  margin: 30px auto;
+}
+
+.header .logo, .header .heart-small{
+  display: inline-block;
+  width: 49.7%;
+}
+
+.header .heart-small{
+  text-align: right;
+}
+
+.nav{
+  text-align: center;
+  background-color: #f6f6f8;
+  padding: 30px 0;
+}
+
+/**** NAV ****/
+.nav li{
+  display: inline;
+}
+
+.nav li+li:before{
+  padding-right: 5px;
+  content: "/";
+}
+
+.nav li a{
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+}
+
+/**** SLOGAN ****/
+.slogan{
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  font-size: 20px;
+  margin: 20px 0;
+}
