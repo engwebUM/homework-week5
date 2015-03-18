@@ -1,9 +1,22 @@
-/**** HEADER ****/
-.header{
-	max-width: 900px;
+/**** CUSTOM ****/
+body{
+  font-size: 24px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.header, .post{
+  max-width: 900px;
   margin: 30px auto;
 }
 
+/**** HEADER ****/
 .header .logo, .header .heart-small{
   display: inline-block;
   width: 49.7%;
@@ -17,6 +30,7 @@
   text-align: center;
   background-color: #f6f6f8;
   padding: 30px 0;
+  font-size: 16px;
 }
 
 /**** NAV ****/
@@ -30,7 +44,6 @@
 }
 
 .nav li a{
-  text-decoration: none;
   color: #666;
   font-weight: bold;
 }
@@ -42,4 +55,43 @@
   font-style: italic;
   font-size: 20px;
   margin: 20px 0;
+}
+
+/**** POST ****/
+.post{
+  position: relative;
+}
+
+.post .post-icon{
+  position:absolute;
+  left: -80px;
+}
+
+.post .post-title{
+  font-size: 50px;
+}
+
+.post .post-title a{
+  color: #333;
+}
+
+.post .written-by{
+  color:#999;
+  font-size: 26px;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.post .written-by a{
+  color:#999;
+  text-decoration: underline;
+}
+
+.post .post-body{
+  margin-top: 45px;
+  line-height: 38px;
+}
+
+.post .post-body p{
+  margin-bottom: 30px;
 }
