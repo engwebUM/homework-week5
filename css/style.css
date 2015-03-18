@@ -1,6 +1,20 @@
+/**** FONTS ****/
+@font-face {
+    font-family: 'aldine';
+    src: url('../fonts/aldine-721-bt-webfont.eot');
+    src: url('../fonts/aldine-721-bt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aldine-721-bt-webfont.woff') format('woff'),
+         url('../fonts/aldine-721-bt-webfont.ttf') format('truetype'),
+         url('../fonts/aldine-721-bt-webfont.svg#aldine') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /**** CUSTOM ****/
 body{
   font-size: 24px;
+  font-family: 'aldine';
 }
 
 a{
