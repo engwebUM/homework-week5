@@ -19,7 +19,7 @@ a:hover{
 /**** HEADER ****/
 .header .logo, .header .heart-small{
   display: inline-block;
-  width: 49.7%;
+  width: 50%;
 }
 
 .header .heart-small{
@@ -54,10 +54,14 @@ a:hover{
   color: #999;
   font-style: italic;
   font-size: 20px;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 /**** POST ****/
+.content{
+  margin-top: 100px;
+}
+
 .post{
   position: relative;
 }
