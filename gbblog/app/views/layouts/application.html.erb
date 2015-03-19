@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Eng. Web.</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="main-top">
+  <div class="top-banner">
+    <div class="logo">
+      <%= image_tag("logo.png", :alt => "groupbuddies logo") %>
+    </div>
+    <div class="heart">
+      <%= image_tag("heart-small.png", :alt => "heart image") %>
+    </div>
+  </div>
+</header>
+
+<div class="top-nav">
+  <nav class="nav">
+    <ul>
+      <li>
+        <a href="/">All</a>
+      </li>
+      <li>
+        <a href="#">Development</a>
+      </li>
+      <li>
+        <a href="#">Design</a>
+      </li>
+      <li>
+        <a href="#">Business</a>
+      </li>
+      <li>
+        <a href="#">Sys Admin</a>
+      </li>
+      <li>
+        <a href="#">Miscellanea</a>
+      </li>
+      <li>
+        <a href="/archive">Archive</a>
+      </li>
+    </ul>
+    </nav>
+</div>
+
+<div class="philosophical-words">
+Sharing ideas can change the world. It definitely changes us
+</div>
+
+<div class="content">
+
+  <%= yield %>
+  
+</div>
+
+<div class="foot-message">This is our blog, designed to share our thoughts about the job we love.</div>
+
+<footer class="foot-nav">
+  <div class="foot-nav">
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="/">All</a>
+        </li>
+        <li>
+          <a href="#">Development</a>
+        </li>
+        <li>
+          <a href="#">Design</a>
+        </li>
+        <li>
+          <a href="#">Business</a>
+        </li>
+        <li>
+          <a href="#">Sys Admin</a>
+        </li>
+        <li>
+          <a href="#">Miscellanea</a>
+        </li>
+        <li>
+          <a href="/archive">Archive</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
