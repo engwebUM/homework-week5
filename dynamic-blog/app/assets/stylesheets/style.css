@@ -1,0 +1,181 @@
+/**** FONTS ****/
+@font-face {
+    font-family: 'Aaargh';
+    src: url('../fonts/Aaargh-webfont.eot');
+    src: url('../fonts/Aaargh-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aaargh-webfont.woff') format('woff'),
+         url('../fonts/Aaargh-webfont.ttf') format('truetype'),
+         url('../fonts/Aaargh-webfont.svg#Aaargh') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/**** CUSTOM ****/
+body{
+  font-size: 20px;
+  font-family: 'Aaargh';
+}
+
+.header, .post{
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/**** HEADER ****/
+.header .logo, .header .heart-small{
+  display: inline-block;
+  width: 50%;
+}
+
+.header .heart-small{
+  vertical-align: middle;
+  text-align: right;
+}
+
+/**** NAV ****/
+.nav{
+  text-align: center;
+  background-color: #f6f6f8;
+  padding: 30px 0;
+  font-size: 12px;
+}
+
+.nav li{
+  display: inline;
+}
+
+.nav li+li:before{
+  padding-right: 5px;
+  content: "/";
+  color: #666;
+}
+
+.nav li a{
+  color: #666;
+  text-decoration: none;
+}
+
+.nav li a:hover{
+  text-decoration: underline;
+}
+
+/**** SLOGAN AND READ MORE****/
+.slogan, .read-more{
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  font-size: 16px;
+  margin: 50px 0;
+}
+
+.read-more{
+  margin: 100px 0;
+}
+
+.read-more a{
+  color: #0091da;
+}
+
+/**** POST ****/
+.post{
+  margin-top: 100px;
+  position: relative;
+}
+
+.post .post-icon{
+  position:absolute;
+  left: -65px;
+}
+
+.post .post-title{
+  font-size: 50px;
+}
+
+.post .post-title a{
+  line-height: 65px;
+  color: #333;
+  text-decoration: none;
+}
+
+.post .post-title a:hover{
+  text-decoration: underline;
+}
+
+.comment a, .post .written-by{
+  color:#999;
+  font-size: 20px;
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.post .written-by a{
+  color:#999;
+  text-decoration: underline;
+}
+
+.post .post-body{
+  margin-top: 45px;
+  line-height: 38px;
+}
+
+.post .post-body p{
+  margin-bottom: 30px;
+}
+
+/**** AUTHOR ****/
+.author{
+  border-top: dotted 1px #000;
+  padding-top: 30px;
+}
+
+.author .photo{
+  vertical-align: top;
+  width: 90px;
+  margin-right: 30px;
+}
+
+.author .photo img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.author .photo, .author .author-info{
+  display: inline-block;
+}
+
+.author .author-info{
+  line-height: 38px;
+  width: 60%;
+}
+
+.author .author-title{
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #0091da;
+}
+
+.author .author-more{
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+}
+
+.author .author-more a{
+  color: #999;
+}
+
+.comment{
+  margin: 60px 0;
+}
+
+/**** FOOTER ****/
+.footer{
+  text-align: center;
+  font-size: 14px;
+  background-color: #0091da;
+  padding: 30px 0;
+  color: #fff;
+  margin-top: 80px;
+}

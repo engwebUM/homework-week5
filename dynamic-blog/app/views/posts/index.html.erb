@@ -1,0 +1,54 @@
+<% @posts.each do |post| %>
+  <article class="post">
+    <div class="post-icon">
+      <%= image_tag "development.png", :title => "Development", :alt => "Development" %>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title">
+        <a href="#"><%= post.title %></a>
+      </h1>
+      <aside class="written-by">Written by <a href="#">Sandro</a> on 18, Mar 2015</aside>
+      <section class="post-body">
+        <%= post.description %>
+      </section>
+      <aside class="comment"><a href="#">Comment this post</a></aside>
+      <section class="author">
+        <div class="photo">
+          <%= image_tag "foto.png", :title => "Sandro Ferraz", :alt => "Sandro Ferraz" %>
+        </div>
+        <div class="author-info">
+          <h2 class="author-title">About Sandro Ferraz</h2>
+          <p class="author-desc">Founded Group Buddies in 2011. Lean Startup Minho founder. Minho.rb founder. </p>
+          <aside class="author-more">Read more from <a></a><a href="#">Sandro</a> or follow him on <a></a><a href="#">Twitter</a></aside>
+        </div>
+      </section>
+    </header>
+  </article>
+<% end %>
+<!-- <h1>Listing posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.description %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %> -->

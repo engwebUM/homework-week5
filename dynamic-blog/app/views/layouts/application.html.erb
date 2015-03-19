@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DynamicBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <title>Blog - Groupbuddies - HomeworkWeek5</title>
+  <%= stylesheet_link_tag "default", "style", media: "all", "data-turbolinks-track" => true %>
 </head>
 <body>
 
-<%= yield %>
+<%= render "layouts/header" %>
+<%= render "layouts/menu" %>
+<%= render "layouts/slogan" %>
+<section class="content">
+	<%= yield %>
+<section>
+<%= render "layouts/read_more" %>
+<%= render "layouts/footer" %>
+<%= render "layouts/menu" %>
 
 </body>
 </html>
