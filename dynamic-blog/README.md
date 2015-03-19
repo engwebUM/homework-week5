@@ -9,7 +9,7 @@
 
 ## If we want use existing user:
 6. \> User.all #for see all users
-7. \> u.find(:id) #pass parameter user id
+7. \> User.find(:id) #pass parameter user id
 
 ## For create new post:
 8. \> p = Post.create title:"Title", description:"Some description", user:u
