@@ -24,8 +24,8 @@
         </div>
         <div class="author-info">
           <h2 class="author-title">About <%= post.user.firstname %> <%= post.user.lastname %></h2>
-          <p class="author-desc"><%= post.user.about %></p>
-          <aside class="author-more">Read more from <%= link_to post.user.firstname, user_path(post.user.id) %> or follow him on <a></a><%= link_to "Twitter", post.user.twitter, target: "_blank" %></aside>
+          <p class="author-desc"><%= post.user.about? ? post.user.about : "" %></p>
+          <aside class="author-more">Read more from <%= link_to post.user.firstname, user_path(post.user.id) %> or follow him on <a></a><%= link_to "Twitter", post.user.twitter? ? post.user.twitter : "#", target: "_blank" %></aside>
         </div>
       </section>
     </article>

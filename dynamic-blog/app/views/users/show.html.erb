@@ -6,8 +6,8 @@
 	  </div>
 	  <div class="author-info">
 	    <h2 class="author-title">About <%= @user.firstname %> <%= @user.lastname %></h2>
-	    <p class="author-desc"><%= @user.about %></p>
-	    <aside class="author-more">Follow me on <a></a><%= link_to "Twitter", @user.twitter, target: "_blank" %></aside>
+	    <p class="author-desc"><%= @user.about? ? @user.about : "" %></p>
+	    <aside class="author-more">Follow me on <a></a><%= link_to "Twitter", @user.twitter? ? @user.twitter : "", target: "_blank" %></aside>
 	  </div>
 	  <div class="button-back">
 	   <%= link_to 'Back', posts_path %>
