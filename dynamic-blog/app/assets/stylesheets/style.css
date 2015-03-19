@@ -124,6 +124,10 @@ body{
   margin-bottom: 30px;
 }
 
+.post .post-empty{
+  text-align: center;
+}
+
 /**** AUTHOR ****/
 .author{
   border-top: dotted 1px #000;
