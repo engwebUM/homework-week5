@@ -18,8 +18,9 @@ body{
 }
 
 .header, .post{
-  max-width: 900px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
 /**** HEADER ****/
@@ -29,6 +30,7 @@ body{
 }
 
 .header .heart-small{
+  vertical-align: middle;
   text-align: right;
 }
 
@@ -84,7 +86,7 @@ body{
 
 .post .post-icon{
   position:absolute;
-  left: -80px;
+  left: -65px;
 }
 
 .post .post-title{
@@ -92,6 +94,7 @@ body{
 }
 
 .post .post-title a{
+  line-height: 65px;
   color: #333;
   text-decoration: none;
 }
