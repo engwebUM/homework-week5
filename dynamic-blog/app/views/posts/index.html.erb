@@ -10,24 +10,24 @@
       </div>
       <header class="post-header">
         <h1 class="post-title">
-          <a href="#"><%= post.title %></a>
+          <a href="#"><%= link_to post.title, post_path(post.id) %></a>
         </h1>
-        <aside class="written-by">Written by <a href="#">Sandro</a> on 18, Mar 2015</aside>
-        <section class="post-body">
-          <%= post.description %>
-        </section>
-        <aside class="comment"><a href="#">Comment this post</a></aside>
-        <section class="author">
-          <div class="photo">
-            <%= image_tag "foto.png", :title => "Sandro Ferraz", :alt => "Sandro Ferraz" %>
-          </div>
-          <div class="author-info">
-            <h2 class="author-title">About Sandro Ferraz</h2>
-            <p class="author-desc">Founded Group Buddies in 2011. Lean Startup Minho founder. Minho.rb founder. </p>
-            <aside class="author-more">Read more from <a></a><a href="#">Sandro</a> or follow him on <a></a><a href="#">Twitter</a></aside>
-          </div>
-        </section>
+        <aside class="written-by">Written by <%= link_to post.user.firstname, user_path(post.user.id) %> on <%= post.created_at.strftime("%d, %b %Y")  %></aside>
       </header>
+      <section class="post-body">
+        <%= post.description %>
+      </section>
+      <aside class="comment"><a href="#">Comment this post</a></aside>
+      <section class="author">
+        <div class="photo">
+          <%= image_tag "foto.png", :title => "Author", :alt => "Author" %>
+        </div>
+        <div class="author-info">
+          <h2 class="author-title">About <%= post.user.firstname %> <%= post.user.lastname %></h2>
+          <p class="author-desc"><%= post.user.about %></p>
+          <aside class="author-more">Read more from <%= link_to post.user.firstname, user_path(post.user.id) %> or follow him on <a></a><%= link_to "Twitter", post.user.twitter, target: "_blank" %></aside>
+        </div>
+      </section>
     </article>
   <% end %>
 <% end %>
