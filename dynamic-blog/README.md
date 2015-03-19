@@ -4,6 +4,7 @@
 3. Type "bundle install" to install dependency gems
 4. Type "rake db\:migrate" for migration database
 5. Type "rails s" for start rails server
+6. Go to "http\://localhost\:3000" in browser
 
 # How populate database:
 
