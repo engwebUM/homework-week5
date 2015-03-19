@@ -1,0 +1,156 @@
+/*
+    Created on : 16/mar/2015, 16:40:32
+    Author     : nunoandrebarbosagomes
+*/
+
+.header{
+    max-width: 50rem;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.header .heart {
+    text-align: right;
+}
+
+.header .main-logo, .header .heart {
+    display: inline-block;
+    width: 50%;
+}
+
+.nav {
+    text-align: center;
+    background-color: #f6f6f8;
+    padding: 15px 0;
+    color: #999999;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+.nav li+li:before {
+    content: "/";
+    padding: 0 5px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.saying {
+    text-align: center;
+    color: #999999;
+    font-family: Serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.content {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-top: 125px;
+}
+
+.post-icon {
+    width: 60px;
+}
+
+
+.post .post-icon {
+    display: inline-block;
+    position: absolute;
+    margin-left: -75px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.huge{
+    margin: 0;
+}
+
+.huge a, .large a, .author-title a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.huge a:hover{
+    text-decoration: underline;
+}
+
+.info {
+    font-size: 26px;
+    color: #999999;
+    font-style: italic;
+}
+
+.info a {
+    color: #999999;
+}
+
+.post-body {
+    line-height: 38px;
+    font-size: 26px;
+}
+
+.post-body p {
+    margin-bottom: 25px;
+}
+
+.post-body a {
+    color: black;
+}
+
+.hire-us {
+    margin: 2rem 0;
+    text-align: center;
+    color: #333333;
+    font-size: 26px;
+}
+
+.hire-us a {
+    color: #0091da;
+}
+
+.author {
+    border-top: dotted 1px #999999;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.author>* {
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.author h2 {
+    color: #0091da;
+}
+
+.author p {
+    font-size: 26px;
+}
+
+.author .author-info {
+    width: 70%;
+}
+
+.author-info aside {
+    font-size: 18px;
+}
+
+.footer {
+  background-color: #0091da;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 0;
+}
