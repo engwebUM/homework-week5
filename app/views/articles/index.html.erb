@@ -8,9 +8,7 @@
     <body>
         <%= render "shared/header" %>
         <%= render "shared/nav" %>
-        <section>
-            <h1 class="saying" >Sharing ideas can change the world. It definitely changes us</h1>
-        </section>
+        <%= render "shared/slogan" %>
         <% @articles.each do |article| %>
         <section class="content">
             <article class="post">
