@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog Eng. Web.</title>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <title>Blog Eng. Web.</title>
 </head>
+
 <body>
+
 <header class="main-top">
   <div class="top-banner">
     <div class="logo">
@@ -24,7 +28,7 @@
         <a href="/">All</a>
       </li>
       <li>
-        <a href="#">Development</a>
+        <a href="/articles/new">Add new article</a>
       </li>
       <li>
         <a href="#">Design</a>
@@ -39,20 +43,20 @@
         <a href="#">Miscellanea</a>
       </li>
       <li>
-        <a href="/archive">Archive</a>
+        <a href="#">Archive</a>
       </li>
     </ul>
     </nav>
 </div>
 
 <div class="philosophical-words">
-Sharing ideas can change the world. It definitely changes us
+You can add a new article selecting "Add new article" in the menu above.
 </div>
 
 <div class="content">
 
   <%= yield %>
-  
+
 </div>
 
 <div class="foot-message">This is our blog, designed to share our thoughts about the job we love.</div>
@@ -65,7 +69,7 @@ Sharing ideas can change the world. It definitely changes us
           <a href="/">All</a>
         </li>
         <li>
-          <a href="#">Development</a>
+          <a href="/articles/new">Add new article</a>
         </li>
         <li>
           <a href="#">Design</a>
@@ -80,7 +84,7 @@ Sharing ideas can change the world. It definitely changes us
           <a href="#">Miscellanea</a>
         </li>
         <li>
-          <a href="/archive">Archive</a>
+          <a href="#">Archive</a>
         </li>
       </ul>
     </nav>

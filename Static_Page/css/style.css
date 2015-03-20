@@ -1,18 +1,10 @@
 body{
   background-color: #FFFFFF;
   color: #333333;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Arial;
   margin: 0;
 	margin-top: 20px;
   padding: 0;
-}
-a{
-  color: #0091DA;
-  text-decoration: none;
-}
-a:hover{
-  color: #0091DC;
-  text-decoration: none;
 }
 
 .main-top{
@@ -50,6 +42,7 @@ a:hover{
 
 .philosophical-words{
   color: #333333;
+  font-family: Arial;
   font-style: italic;
   font-size: 1.5em;
   text-align: center;
@@ -64,6 +57,7 @@ a:hover{
   background-color: #0091DA;
   color: #FFFFFF;
   font-size: 18px;
+  font-family: Arial;
   text-align: center;
   margin: 0;
   padding: 30px;
@@ -73,12 +67,6 @@ a:hover{
   background-color: #FFFFFF;
 }
 
-.content{
-  width: 720px;
-  align: center;
-  margin: 5px auto;
-}
-
 article {
   width: 720px;
   align: center;
@@ -86,13 +74,9 @@ article {
 }
 
 hr{
-  width: 80%;
+  width: 50%;
   text-align: center;
-  border: 0px;
-  border-bottom-width: 1px;
-  border-bottom-style: dashed;
-  border-bottom-color: #999999;
-  padding: 15px;
+  border-color: #999999
 }
 
 nav{
@@ -120,12 +104,10 @@ nav li+li:before{
 	content: "/";
 	padding: 0 5px;
 }
-
 nav a{
   color: #666666;
 	text-decoration: none;
 }
-
 nav a:hover{
   color: #0091DA;
 	text-decoration: underline;
@@ -143,37 +125,6 @@ author a{
 	text-decoration: underline;
 }
 
-.author-box{
-  width:100%;
-  vertical-align:top;
-}
-
-.author-picture{
-  width: 92px%;
-  text-align: left;
-  display:inline-block;
-  vertical-align:top;
-}
-
-.author-about{
-  width:600px;
-  text-align: left;
-  display:inline-block;
-  vertical-align:top;
-  padding-left:10px;
-}
-
-.h1-author{
-  font-size: 1.5rem;
-  color: #0091DA;
-}
-
-.author-readmore{
-  font-size: 0.9rem;
-  padding-bottom:20px;
-  text-decoration: italic;
-  color: #999999;
-}
 .h1-article{
   font-size: 2.5rem;
 }
