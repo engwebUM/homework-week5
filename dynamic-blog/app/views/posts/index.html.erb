@@ -1,0 +1,33 @@
+<% if @posts.empty? %>
+  <article class="post">
+    <section class="post-empty">Without posts</section>
+  </article>
+<% else %>
+  <% @posts.each do |post| %>
+    <article class="post">
+      <div class="post-icon">
+        <%= image_tag "development.png", :title => "Development", :alt => "Development" %>
+      </div>
+      <header class="post-header">
+        <h1 class="post-title">
+          <a href="#"><%= link_to post.title, post_path(post.id) %></a>
+        </h1>
+        <aside class="written-by">Written by <%= link_to post.user.firstname, user_path(post.user.id) %> on <%= post.created_at.strftime("%d, %b %Y")  %></aside>
+      </header>
+      <section class="post-body">
+        <%= post.description %>
+      </section>
+      <aside class="comment"><a href="#">Comment this post</a></aside>
+      <section class="author">
+        <div class="photo">
+          <%= image_tag "foto.png", :title => "Author", :alt => "Author" %>
+        </div>
+        <div class="author-info">
+          <h2 class="author-title">About <%= post.user.firstname %> <%= post.user.lastname %></h2>
+          <p class="author-desc"><%= post.user.about? ? post.user.about : "" %></p>
+          <aside class="author-more">Read more from <%= link_to post.user.firstname, user_path(post.user.id) %> or follow him on <a></a><%= link_to "Twitter", post.user.twitter? ? post.user.twitter : "#", target: "_blank" %></aside>
+        </div>
+      </section>
+    </article>
+  <% end %>
+<% end %>
