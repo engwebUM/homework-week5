@@ -1,0 +1,40 @@
+.autor {
+	color:#C0C0C0;
+    font-family:verdana;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.cinza {
+	color:#C0C0C0;
+    font-family:verdana;
+	font-style: italic;
+	text-align: center;
+}
+
+.conteudo {
+	font-size: 25px;
+	line-height:  38px;
+}
+
+.alinhar-div2 {
+	text-align: right;
+}
+
+.alinhar-div img, .alinhar-div2 img{
+	vertical-align:middle
+}
+
+.alinhar-div, .alinhar-div2 {
+	display: inline-block;
+	width: 50%;
+}
+
+.struct {
+	margin: 0 auto;
+	width: 750px;
+}
+
+.titulo {
+	font-size: 50px;
+}
