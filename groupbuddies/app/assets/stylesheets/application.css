@@ -1,0 +1,100 @@
+#logo{
+	padding: 10px;
+	padding-left: 250px;
+}
+
+#imagem{ 
+	padding-left: 550px;
+}
+
+.topButtons li{
+	display: inline;
+}
+
+.topButtons li+li:before{
+	content: "/";
+	padding: 0 5px;
+}
+
+.topButtons a{
+	color: #666666;
+	text-decoration: none;
+}
+
+.topButtons{
+	text-align: center;
+	background-color: #f6f6f8;
+	padding: 10px;
+}
+
+.slogan{
+	text-align: center;
+	color: #999999;
+	font-family: "freight-text-pro", Arial, serif;
+  	font-size: 10px;
+  	font-style: italic;
+  	padding-top: 10px;
+}
+
+.article{
+	padding-top: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.article .icon-post{
+	height: 0px;
+	width: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+.header-post .title-post a{
+	padding-left: 70px;
+	font-size: 40px;
+	cursor: auto;
+	color: black;
+	display: inline;
+	font-weight: bold;
+	vertical-align: auto;
+	text-decoration: none;
+}
+
+.header-post .author-post{
+	padding-left: 70px;
+	color: #999999;
+	font-family: "freight-text-pro", Arial, serif;
+}
+
+.header-post .author-post a{
+	color: #999999;
+	font-family: "freight-text-pro", Arial, serif;
+	font-style: italic;	
+}
+
+.body-post p{
+	font-family: "freight-text-pro", Arial, serif;
+	font-style: bold;
+	padding-left: 70px;
+	padding-right: 75px;
+	font-size: 20px;
+	color:rgb(51,51,51);
+
+}
+
+.body-post p a{
+	color: #999999;
+	font-family: "freight-text-pro", Arial, serif;
+	font-style: italic;	
+}
+::selection{
+	background-color: grey;
+}
+
+
+
+
+
+
+
+
