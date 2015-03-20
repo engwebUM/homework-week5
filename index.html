@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Group Buddies Blog</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	</head>
+	<body>
+		<div>
+		<header><img id="imglogo" src ="logo.png"><img id="imgheart" src ="heart.png"></header></div>
+		<iframe src="navegation.html" marginWidth=0 ></iframe>
+		<section>
+			<h1 id="intro">Sharing ideas can change the world. It definitely changes us</h1>
+		</section>
+
+		<section>
+			<header id="headSection">
+				<div id="headerDiv">
+					<div id="logoruby"><img src="ruby.png"> </div>
+					<div id="section"><h1><a href="">Accessibility Matters</a></h1></div>
+					<div id="subtitle">Written by <a href="">Luis</a> on 02, Feb 2015</div>
+				</div>
+			</header>
+			<div id="text">
+			<p>I am privileged. I am able to navigate the web in all it's glory, with all the amazing animations, crazy stuff happening on scrolls, great videos and the latest style for input fields.</p><br/><br/>
+			<p>Unfortunately, not everyone can.</p><br/><br/>
+			<h2>Knowing your users</h2>
+			<p>A person can have a hard time using your product for a multitude of reasons, from being blind to having a motor disability or even being new to technology.</p><br/><br/>
+			<p>Research is key at this point. How many users do you have? How many of them are not able to use your site? Is it an internal tool, or a product for the masses?</p><br/><br/>
+			<p>When in doubt don't make assumptions. Try to be as inclusive as possible and feasible in your time frame.</p><br/><br/>
+			<p>The stage of the product is also a factor in this. Building a prototype, an MVP or improving an area of a website used by millions of people daily, have very different constraints and also very different amounts of information available about the target audience. In my opinion, there is no excuse for at least having this in mind in the conceptual stage of your product.</p><br/><br/>
+
+			<h2>Inclusive Design</h2>
+			<p>In the <a href="">words of</a> University of Cambridge's Engineering Design Centre:</p><br/>
+			<blockquote><p>Every design decision has the potential to include or exclude customers. Inclusive design emphasizes the contribution that understanding user diversity makes to informing these decisions. User diversity covers variation in capabilities, needs, and aspirations.</p>
+			</blockquote>
+			<h3>Inclusive versus Universal Design</h3>
+
+			<p>Inclusive and Universal Design are often used interchangeably, and you'll see it referred to as the same thing on your <a href="">internet searches</a>. Some people, such as Brian Kelly <a href="">defend that</a> Inclusive is a better name than Universal, which:</p>
+
+			<blockquote>
+			<p>leads people to believe that a single universal solution is possible or, indeed desirable.</p>
+			</blockquote><br/>
+			<h2>What can I do?</h2>
+			<p>You can read <a href="">WCAG's guidelines</a> and implement them all in all of your web products.</p><br/><br/>
+			<p>Coming back to reality, that is both infeasible and undesirable, since it is a massive undertaking just to read it, and possibly a bigger one to implement it.</p><br/><br/>
+			<p>There are a lot of seemly small things that you can start doing to improve the accessibility of your website. Here's a few, from Cameron Cundiff's <a href="">talk</a> at the NYC Accessibility &amp; Inclusive Design Meet-up:</p><br/><br/>
+			<ul class="lista">
+				<li>Make the website "tab friendly" (aka <a href="">keyboard-only navigation</a>)</li>
+				<li>Label form elements</li>
+				<li>Provide alternative text for non-text content (alt text for images, <a href="">aria labels</a> or <a href="">visually hidden text for icons</a>)</li>
+				<li>Ensure color contrast meets minimum thresholds</li>
+				<li>Make link text descriptive (<a href="">15 rules for accessible links</a>)</li>
+				<li>Do not use color as the only indication of meaning (a green flag to represent OK and a red one for errors may not be differentiated by a color blind person)</li>
+				<li>Add captions to audio content (both <a href="">youtube</a> and <a href="">itunes</a> make it really easy for videos and podcasts)</li>
+				<li>Add <a href="">ARIA landmarks</a></li>
+			</ul>
+			<p>There are a lot more things you can do, but this is definitely a good start.</p><br/><br/>
+			<h2>Tools</h2>
+			<p>There are already some good tools that you can use to help test, manually and automatically, your websites for accessibility.</p>
+			<h3>Color Contrast</h3>
+			<p>Lea Verou has a <a href="">great website</a> for testing the contrast of colors according to WCAG 2.0.</p><br/><br/>
+			<p><img src="https://blog.groupbuddies.com/uploads/post_image/image/31/Screen_Shot_2015-01-16_at_17.48.01.png" alt="color contrast"></p><br/><br/>
+			<p>Google Chrome as an <a href="">add-on</a> for the developer tools that allows you to inspect an element and test the color contrast, among other things.</p>
+			<h3>WCAG 2.0 compliance</h3>
+			<p>With the add-on I have just mentioned, you can perform and audit on accessibility.</p><br/><br/>
+			<p>A better tool for this, in my opinion, is <a href="">Tenon</a> by Karl Groves and his team. You get really detailed reports on how accessible your website is, and recommendations on how to fix issues. I highly recommend it (it will be a paid service, but free for OSS).</p><br/><br/>
+			<p><img src="https://blog.groupbuddies.com/uploads/post_image/image/30/Screen_Shot_2015-01-16_at_17.51.05.png" alt="tenon screenshot"></p>
+			<h3>Screen Readers</h3>
+			<p>Let's face it, if you don't use a screen reader everyday, you won't really know how it feels to use your website with one. It doesn't hurt to try, though.</p><br/><br/>
+			<p>If you are in a Mac, you have <a href=".">VoiceOver</a> out of the box, trigger it with cmd + F5. This should be good enough to give you a rough idea of how you are doing.</p><br/><br/>
+			<p>It's probably a good idea to pay some users who do use them everyday and do usability tests with them.</p>
+			<h3>Automated tests</h3>
+			<p>If you are using Ruby, you can automate some of these accessibility tests, using a custom webdriver for your integration tests. This is made easy with <a href="">capybara-accessible</a>, there are literally no changes required to your tests, just the setup.</p><br/><br/>
+			<h2>Other techniques and problems</h2>
+			<p>Here is some common issues and interesting techniques you might want to use.</p><br/>
+			<h3>Breadcrumbs</h3>
+			<p>Breadcrumbs at the top of the page are common, also most users will have no problems understanding what they are. A user with a screen reader, however, will have to go through some of the breadcrumb links to know where they are. You can easily add context with a hidden text before the links, for instance, "You are here:".</p>
+			<h3>Skip to main content link</h3>
+			<p>A great technique for providing a link to skip to the main content of the site, for both screen reader and keyboard only users, can be found in the <a href="">WebAIM website</a>.</p>
+			<h3>Headings</h3>
+			<p>A common mistake/misconception on the web, is to use headings (<code>h1</code>, <code>h2</code>, ...) for style, instead of structure. Screen readers use headings as the page outline, and it's the <a href="">primary way for finding information</a> by their users and therefore is very important not to mess up. An <code>h1</code> should be a main title, and if there is a subtitle it should be an <code>h2</code> and a subtitle inside of that an <code>h3</code> and so forth.</p><br/><br/>
+			<p>HTML5 introduces a new document outline algorithm, alongside with sectioning content elements such as <code>section</code> or <code>article</code>. Sematically it is now valid to have an <code>h1</code> inside such an element, and it should be nested under an outer <code>h1</code>. Take into account, though, that screen readers will probably disregard this new algorithm entirely and thus, it is <a href="">recommended</a> not <a href="">to use it</a>.</p><br/>
+			<h2>Conclusion</h2>
+			<p>I am privileged, but I shouldn't be. Everyone should be able to enjoy all of the web's content with minimum restrictions, obvious ones aside.</p><br/><br/>
+			<p>As web developers and designers it is our job to make it so. Go and make the web more accessible, because accessibility matters!</p><br/><br/><br/>
+
+			<div id="comment"><a href="">Comment this post</a></div>
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><br/><br/>
+
+			<div id="hire">Want to hire us? <a href="" >Get in touch</a></div>
+			</div>
+			<br/>
+			<div id="information">
+				<div id="photo"><img src="photo.png"></div>
+				<div id="author">
+					<h2>About Luis Zamith</h2>
+					<p>Founder and Developer at Group Buddies where he tries to improve the web one website at a time. Loves the tech world, especially applicational design, but can be seen, on occasion, working on user experience problems or even system administration. His motto is “Start small or not at all”.</p>	<br/><br/>
+					<div id="more_info">Read more from <a></a><a href="">Luis</a> or follow him on <a></a><a href="">Twitter</a></div>
+				</div>
+			</div>
+		</section>
+		
+		<section><div id="read_more_posts">
+		<a  href="">Want to read more? Check all of our posts here</a></div>
+		</section>
+		<br/><br/><br/><br/><br/><br/>
+		<footer>This is our blog, designed to share our thoughts about the job we love.
+			<iframe id="iframefooter" src="navegation.html" marginWidth=0 marginHeight=0></iframe></footer>
+	</body>
+</html>
