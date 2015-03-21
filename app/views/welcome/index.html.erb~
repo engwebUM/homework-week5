@@ -7,8 +7,8 @@
 	</head>
 	<body>
 		<div>
-		<header><img id="imglogo" src ="logo.png"><img id="imgheart" src ="heart.png"></header></div>
-		<iframe src="navegation.html" marginWidth=0 ></iframe>
+		<header><img id="imglogo" src ="logo.png"><img id="./imgheart" src ="heart.png"></header></div>
+		<iframe src="./navegation.html" marginWidth=0 ></iframe>
 		<section>
 			<h1 id="intro">Sharing ideas can change the world. It definitely changes us</h1>
 		</section>
