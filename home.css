@@ -1,4 +1,4 @@
-html, header, body, div, a, img, nav, section, p, ul, li, h1, footer {
+html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside {
   border: 0px none;
   font: inherit;
   margin: 0px;
@@ -8,7 +8,8 @@ html, header, body, div, a, img, nav, section, p, ul, li, h1, footer {
 
 html, body { /** talvez incluir isto na parte acima? **/
   color: #333;
-  font-family: Helvetica,Arial,serif;
+  /*font-family: Helvetica,Arial,serif;*/
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
 }
 
@@ -26,7 +27,7 @@ header {
   padding-right: 0.5rem;
 }
 
-header, nav, section, footer {
+header, nav, section, footer, article, aside {
   display: block;
 }
 
@@ -44,6 +45,7 @@ header .logo img, header .heart img {
 }
 
 a {
+  color: #333;
   text-decoration: underline;
 }
 
@@ -98,4 +100,102 @@ footer {
   margin-bottom: 0px;
   padding: 30px 0px;
   text-align: center;
+}
+
+.posts .category-icon {
+  display: inline-block;
+  margin-left: calc(0px - 60px - 1rem);
+  position: absolute;
+  width: 60px;
+}
+
+.posts h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.posts h1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.posts .post-info {
+  color: #999;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.posts .post-info a {
+  color: #999
+}
+
+.posts .post-body {
+  line-height: 38px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.posts .post-body p {
+  margin-bottom: 25px;
+}
+
+.posts .post-body h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.posts .post-comment {
+  display: inline-block;
+}
+
+.posts .post-share {
+  display: inline-block;
+  float: right;
+}
+
+.posts .hire {
+  margin: 2rem 0px;
+  text-align: center;
+}
+
+.posts .hire a {
+  color: #0091DA;
+}
+
+.posts .author {
+  border-top: 1px dotted #999;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.posts .author > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.posts .author-photo {
+  width: 90px;
+  margin-right: 1rem;
+}
+
+.posts .author-info {
+  width: 70%;
+}
+
+.posts .author h2 {
+  color: #0091DA;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.posts .author-bio {
+  margin: 1rem 0px;
+  line-height: 38px;
+}
+
+.posts .author .post-info {
+  font-size: 18px;
 }
