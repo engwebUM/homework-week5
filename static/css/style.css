@@ -43,7 +43,7 @@ header .heart{
   text-align: right;
 }
 
-.nav{
+nav{
   text-align: center;
   background-color: #f6f6f8;
   padding: 30px;
@@ -51,21 +51,21 @@ header .heart{
   font-weight: bold;
 }
 
-.nav li{
+nav li{
   display: inline;
 }
 
-.nav li+li:before{
+nav li+li:before{
   content: "/";
   padding: 5px;
 }
 
-.nav a{
+nav a{
   color: #666666;
   text-decoration: none;
 }
 
-.nav a:hover{
+nav a:hover{
   color: #0792D7;
   text-decoration: underline;
 }
@@ -87,8 +87,8 @@ header .heart{
 
 .content .post-header .info{
   margin-top: 0.5rem;
-}
 
+}
 .content .post-body{
   margin-bottom: 3rem;
 }
@@ -108,13 +108,13 @@ header .heart{
   width: 60px;
 }
 
-.post .post-icon{
+article .post-icon{
   display: inline-block;
   position: absolute;
   margin-left: -85px;
 }
 
-.post .title{
+article .title{
   line-height: 60px;
   vertical-align: middle;
 }
