@@ -1,40 +1,190 @@
-.autor {
-	color:#C0C0C0;
-    font-family:verdana;
-	font-size: 20px;
-	font-style: italic;
+.alinhar-div div {
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 30px;
 }
 
-.cinza {
-	color:#C0C0C0;
-    font-family:verdana;
-	font-style: italic;
-	text-align: center;
-}
-
-.conteudo {
-	font-size: 25px;
-	line-height:  38px;
+.alinhar-div img {
+	vertical-align: middle
 }
 
 .alinhar-div2 {
 	text-align: right;
 }
 
-.alinhar-div img, .alinhar-div2 img{
-	vertical-align:middle
+.alinhar-div3 div {
+	display: inline-block;
+	width: 45%;
+	margin-bottom: 30px;
 }
 
-.alinhar-div, .alinhar-div2 {
+.alinhar-div3 img {
+	vertical-align: middle
+}
+
+.autor, .final {
+	color: #A0A0A0;
+  	font-family: serif;
+	font-size: 25px;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.comentarios {
+	margin-bottom: 100px;
+}
+
+.conteudo, .conteudo-info {
+    font-family: serif;
+	font-size: 25px;
+	line-height:  38px;
+	color: #282828;
+	margin-bottom: 80px;
+}
+
+.conteudo-info {
+    font-family: serif;
+	font-size: 24px;
+	line-height:  38px;
+	color: #282828;
+	margin-bottom: 20px;
+}
+
+.caixa-texto {
+	margin-bottom: 80px;
+}
+
+.final a {
+	color: #A0A0A0;
+	font-size: 22px;
+}
+
+.foto {
+	width: 90px;
+}
+
+.info {
+	width: 500px;
+	margin-left: 20px;
+}
+
+.introducao {
+	color: #A0A0A0;
+    font-family: serif;
+    font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 90px;
+}
+
+.link-autor:link {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+.link-autor:visited {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+.link-autor:hover {
+	color: #A0A0A0;
+	text-decoration: underline;
+}
+
+#link-titulo:link {
+	color: #333333;
+	text-decoration: none;
+}
+
+#link-titulo:visited {
+	color: #333333;
+	text-decoration: none;
+}
+
+#link-titulo:hover {
+	color: #333333;
+	text-decoration: underline;
+}
+
+.link-conteudo:link {
+	color: #282828;
+}
+
+.link-conteudo:visited {
+	color: #282828;
+}
+
+.link-conteudo:hover {
+	color: #282828;
+}
+
+.link-rodape:link {
+	color: #0099FF;
+}
+
+.link-rodape:visited {
+	color: #0099FF;
+}
+
+.link-rodape:hover {
+	color: #0099FF;
+}
+
+.perfil {
+	border-top: 1px dotted #A0A0A0;
+	padding-top: 25px;
+}
+
+.perfil div {
 	display: inline-block;
-	width: 50%;
+}
+
+.perfil .foto {
+	vertical-align: top;
+}
+
+.rodape {
+    font-family: serif;
+	font-size: 25px;
+	text-align: center;
+	line-height:  38px;
+	color: #282828;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.rodape-info {
+	color: #A0A0A0;
+	font-size: 17px;
+	font-style: italic;
 }
 
 .struct {
 	margin: 0 auto;
-	width: 750px;
+	width: 748px;
 }
 
 .titulo {
-	font-size: 50px;
+	font-size: 45px;
+	color: #333333;
+	font-family: fantasy;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.titulo2 {
+	font-size: 40px;
+	color: #333333;
+	font-family: fantasy;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.titulo-info {
+	font-size: 30px;
+	color: #009CFF;
+	font-family: fantasy;
+	font-weight: bold;
+	margin-bottom: 25px;
 }
