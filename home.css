@@ -1,0 +1,101 @@
+html, header, body, div, a, img, nav, section, p, ul, li, h1, footer {
+  border: 0px none;
+  font: inherit;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+}
+
+html, body { /** talvez incluir isto na parte acima? **/
+  color: #333;
+  font-family: Helvetica,Arial,serif;
+  font-size: 24px;
+}
+
+body {
+  line-height: 1;
+}
+
+header {
+  margin-top: 15px;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+header, nav, section, footer {
+  display: block;
+}
+
+header .logo, header .heart {
+  display: inline-block;
+  width: 49%;
+}
+
+header .heart {
+  text-align: right;
+}
+
+header .logo img, header .heart img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #F6F6F8;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li + li:before { /* separators are pseudo-elements */
+  color: #999;
+  content: "/";
+  padding: 0px 5px;
+}
+
+nav a {
+  color: #666
+  text-decoration: none;
+}
+
+.motto h1 {
+  color: #999;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.posts {
+  margin: 5em auto 8em;
+  max-width: 30rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.read-more, .read-more a {
+  color: #0091DA;
+  text-align: center;
+}
+
+footer {
+  background-color: #0091DA;
+  color: #FFF;
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 30px 0px;
+  text-align: center;
+}
