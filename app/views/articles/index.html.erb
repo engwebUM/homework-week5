@@ -9,8 +9,8 @@
         <%= render "shared/header" %>
         <%= render "shared/nav" %>
         <%= render "shared/slogan" %>
-        <% @articles.each do |article| %>
         <section class="content">
+        <% @articles.each do |article| %>
             <article class="post">
                 <div class="post-icon">
                     <a href="/category/development">
@@ -21,11 +21,15 @@
                     <h1 class="huge"><a href="#"><%= article.title %></a></h1>
                     <aside class="info">Written by <a href="/author/Roberto-Machado"><%= article.author.first_name %></a> on <%= article.date %></aside>
                 </header>
-                <div class="post-body" data-twttr-id="twttr-sandbox-0">
+                <div class="post-body">
                     <%= article.body.html_safe %>
                 </div>
-                <aside class="info comment"><a href="#">Comment this post</a></aside>
-                <div class="hire-us">Want to hire us? <a href="#" target="blank">Get in touch</a></div>
+                <aside class="info comment">
+                    <a href="#">Comment this post</a>
+                </aside>
+                <div class="hire-us">
+                    Want to hire us? <a href="#" target="blank">Get in touch</a>
+                </div>
                 <section class="author">
                     <div class="photo">
                         <%= image_tag(article.author.photo_path) %>
@@ -37,8 +41,8 @@
                     </div>
                 </section>
             </article>
+            <% end %>
         </section>
-        <% end %>
         <%= render "shared/footer" %>
         <%= render "shared/nav" %>
     </body>

@@ -4,7 +4,7 @@
 */
 
 .header{
-    max-width: 50rem;
+    max-width: 720px;
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +35,7 @@
     padding: 0 5px;
 }
 
-nav ul li {
+.nav ul li {
     display: inline;
 }
 
@@ -49,7 +49,7 @@ nav ul li {
 }
 
 .content {
-    max-width: 50rem;
+    max-width: 720px;
     margin: 0 auto;
     padding-top: 125px;
 }
@@ -58,23 +58,19 @@ nav ul li {
     width: 60px;
 }
 
-
 .post .post-icon {
     display: inline-block;
     position: absolute;
     margin-left: -75px;
 }
 
-h1 {
-    font-size: 50px;
-    font-family: sans-serif;
-}
-
 .huge{
+    font-size: 46px;
+    font-family: sans-serif;
     margin: 0;
 }
 
-.huge a, .large a, .author-title a {
+.huge a, .author-title a {
     color: #333333;
     text-decoration: none;
 }
@@ -84,8 +80,9 @@ h1 {
 }
 
 .info {
-    font-size: 26px;
+    margin-top: 10px;
     color: #999999;
+    font-size: 26px;
     font-style: italic;
 }
 
@@ -94,11 +91,23 @@ h1 {
 }
 
 .post-body {
+    margin-top: 50px;
+    margin-bottom: 70px;
     line-height: 38px;
     font-size: 26px;
 }
 
+.post-body h1 {
+  font-size: 38px;
+  font-family: sans-serif;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
 .post-body p {
+    font-size: 24px;
+    margin-top: 0px;
     margin-bottom: 25px;
 }
 
@@ -107,9 +116,9 @@ h1 {
 }
 
 .hire-us {
-    margin: 2rem 0;
-    text-align: center;
+    margin: 50px 0;
     color: #333333;
+    text-align: center;
     font-size: 26px;
 }
 
@@ -119,18 +128,24 @@ h1 {
 
 .author {
     border-top: dotted 1px #999999;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
+    padding-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 120px;
+}
+
+.author-title {
+    margin-top: 0;
 }
 
 .author>* {
-    margin-right: 1rem;
+    margin-right: 15px;
     display: inline-block;
     vertical-align: top;
 }
 
 .author h2 {
+    font-size: 30px;
+    font-family: sans-serif;
     color: #0091da;
 }
 
