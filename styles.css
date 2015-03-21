@@ -22,12 +22,24 @@
 	vertical-align: middle
 }
 
+.artigo {
+	margin-left: 20px;
+	margin-right: 60px;
+	width: 744px;
+}
+
 .autor, .final {
 	color: #A0A0A0;
   	font-family: serif;
-	font-size: 25px;
+	font-size: 22px;
 	font-style: italic;
 	margin-bottom: 40px;
+}
+
+.cabecalho {
+	margin-top: 15px;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
 .comentarios {
@@ -61,6 +73,7 @@
 
 .foto {
 	width: 90px;
+	vertical-align: top;
 }
 
 .info {
@@ -71,10 +84,40 @@
 .introducao {
 	color: #A0A0A0;
     font-family: serif;
-    font-size: 20px;
+    font-size: 18px;
 	font-style: italic;
 	text-align: center;
-	padding-bottom: 90px;
+	padding-bottom: 110px;
+}
+
+.marcador {
+	width: 60px;
+	vertical-align: top;
+}
+
+.menu {
+	text-align: center;
+	font-family: fantasy;
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 50px;
+	color: #5C5B5B;
+}
+
+.menu a:link {
+	color: #5C5B5B;
+	text-decoration: none;
+}
+
+.menu a:visited {
+	color: #5C5B5B;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: #009CFF;
+	text-decoration: underline;
 }
 
 .link-autor:link {
@@ -140,10 +183,6 @@
 	display: inline-block;
 }
 
-.perfil .foto {
-	vertical-align: top;
-}
-
 .rodape {
     font-family: serif;
 	font-size: 25px;
@@ -162,11 +201,15 @@
 
 .struct {
 	margin: 0 auto;
-	width: 748px;
+	width: 888px;
+}
+
+.struct .marcador, .struct .artigo {
+	display: inline-block;
 }
 
 .titulo {
-	font-size: 45px;
+	font-size: 47px;
 	color: #333333;
 	font-family: fantasy;
 	font-weight: bold;
@@ -182,9 +225,9 @@
 }
 
 .titulo-info {
-	font-size: 30px;
+	font-size: 28px;
 	color: #009CFF;
 	font-family: fantasy;
 	font-weight: bold;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
