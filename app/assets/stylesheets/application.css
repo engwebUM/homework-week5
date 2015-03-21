@@ -72,46 +72,6 @@ section {
 
 }
 
-section .post-header {
-    margin-left: -20px;
-}
-
-
-#gb-logo{
-    text-align: left;
-    margin-top: 10%;
-    width: 13%;
-    margin-left: -60px;
-}
-
-#title{
-    text-align: right;
-    margin-left: 20px;
-    margin-top: -23%;  
-    margin-right: 10%;
-}
-
-#title a{
-    text-decoration: none;
-}
-
-
-#title :hover {
-   text-decoration: underline;
-}
-
-
-#creation-info {
-    text-align: left;
-    margin-bottom: 3rem; 
-    margin-top: -30px;
-    font-style: italic;
-}
-
-
-#creation-info a{
-    color: grey;
-}
 
 
 #nav {
@@ -157,28 +117,6 @@ section .post-header {
 }
 
 
-.read-more-post {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-    font-size: 25px;
-    text-align: center;
-}
-
-.read-more-post a {
-    color: #0091da;
-}
-
-
-.comment{
-    margin-top: 5rem;
-}
-
-.comment .comment-link a{
-    color: grey;
-    font-style: italic;
-    font-size: 24px;
-
-}
 
 .hire-us{
     font-size: 22px;
@@ -192,34 +130,3 @@ section .post-header {
     color:#0091da;
 }
 
-
-.author {
-    border-top: dotted 1px grey;
-    padding-top: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-}
-
-.author .author-info {
-    margin-top: -13rem;
-    margin-left: 7rem;
-    width: 70%;
-}
-
-.author .author-info .read-more-author {
-    color: grey;
-    font-size: 17px;
-    font-family: "freight-text-pro", Times, serif;
-    font-style: italic;
-}
-
-.author .author-info .read-more-author a{
-    color: grey;
-}
-
-.author .author-info .author-name{
-    color:#0091da;
-    font-family: "freight-text-pro", Arial, serif;
-    font-size: 30px;
-    font-weight: bold;
-}
