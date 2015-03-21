@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Group Buddies Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <%= render "shared/header" %>
+        <%= render "shared/nav" %>
+        <%= render "shared/slogan" %>
+        <section class="content">
+        <% @articles.each do |article| %>
+            <article class="post">
+                <div class="post-icon">
+                    <a href="/category/development">
+                      <%= image_tag("development.png") %>
+                    </a>
+                </div>
+                <header class="post-header">
+                    <h1 class="title"><%= link_to article.title, article_path(article.id) %></h1>
+                    <aside class="info">Written by <a href="/author/Roberto-Machado"><%= article.author.first_name %></a> on <%= article.date %></aside>
+                </header>
+                <div class="post-body">
+                    <%= article.body.html_safe %>
+                </div>
+                <aside class="info comment">
+                    <a href="#">Comment this post</a>
+                </aside>
+                <div class="hire-us">
+                    Want to hire us? <a href="#" target="blank">Get in touch</a>
+                </div>
+                <section class="author">
+                    <div class="photo">
+                        <%= image_tag(article.author.photo_path) %>
+                    </div>
+                    <div class="author-info">
+                        <h2 class="author-title">About <%= article.author.first_name + " " + article.author.last_name  %></h2>
+                        <p class="author-bio"><%= article.author.about %></p>
+                        <aside class="info small">Read more from <a></a><a href="/author/Roberto-Machado"><%= article.author.first_name %></a> or follow him on <a></a><a href="https://twitter.com/<%= article.author.tag_twitter %>">Twitter</a></aside>
+                    </div>
+                </section>
+            </article>
+            <% end %>
+        </section>
+        <%= render "shared/footer" %>
+        <%= render "shared/nav" %>
+    </body>
+</html>
