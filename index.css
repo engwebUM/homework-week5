@@ -111,11 +111,21 @@ section header{
 	color: #565656;
 }
 
-#text h2,#text h3{
+#text1 {
+	
+	font-size: 20px;
+	color: #565656;
+}
+
+p em{
+	font-style: italic;
+}
+
+#text h2,#text h3,#text1 h2,#text1 h3{
 	color: black;
 }
 
-p a ,p a:hover, #text .lista a{
+p a ,p a:hover, #text .lista a,#text1 .lista a{
 	color:#565656;
 	text-decoration: underline;
 }
@@ -127,14 +137,14 @@ blockquote{
 	padding-left: 3%;
 }
 
-#text ul li {
+#text ul li{
 	margin-bottom: 20px;
 	display: block;
 	padding-left: 1em; 
   text-indent: -.7em;
 }
 
-#text ul li:before {
+#text ul li:before{
     content: "• ";
     color: black; 
 }
@@ -153,10 +163,13 @@ code {
 #comment, #comment a:hover{
 	color: #999;
 	font-style: italic;
+	width: 60%;
+	float:left;
 }
 
 .twitter-share-button{
 	float: right;
+	width: 39%;
 }
 
 #hire{
@@ -170,7 +183,7 @@ code {
 
 #author{
 	float: right;
-	width: 85%;
+	width: 80%;
 }
 
 #photo{
@@ -184,7 +197,7 @@ code {
 }
 
 #information{
-	height: 95%;
+	height: 60%;
 	border-top:1px dotted #999;
 }
 
@@ -198,13 +211,14 @@ code {
 	text-decoration: underline;
 }
 
-#read_more_posts, #read_more_posts a:hover{
-	color: #0091DA !important;;
+#read_more_posts a, #read_more_posts a:hover,#read_more_posts{
+	color: #0091DA !important;
 	text-decoration: underline;
 	font-size: 20px;
-	margin-left: 15%;
-	margin-top: -25% !important;
+	text-align: center;
+	
 }
+
 
 footer{
 	text-align: center;
@@ -215,8 +229,8 @@ footer{
 	margin-bottom: 0px;
 	margin-left: -0.6%;
 	width: 101.3%;
-	height: 6.7%
-		z-index:1;
+	height: 4.7%;
+	
 }
 
 iframe{
@@ -227,6 +241,7 @@ iframe{
 	padding-top: 0px;
 	margin-left: -0.6%;
 	margin-right: 0px;
+
 }
 
 #iframefooter{
@@ -238,3 +253,6 @@ iframe{
 	position: absolute;
 }
 
+header.article2{
+	margin-top: -10%;
+}
