@@ -1,0 +1,184 @@
+<html>
+   <head>
+      <title>Group Buddies Blog</title>
+      <link rel="stylesheet" href="homework5.css">
+      </head>
+
+   <body>
+
+          <header class="header">
+             <div class="logotipo"><a href=""><img alt="GroupBuddies" src="./imagens/logo-15c19284886b7a7c75b7cb69f0ae07e4.png"></a></div>
+             <div class="coracao"><img alt="Menu" src="./imagens/heart-small-f50c3e44fa78b838c057170a94c5ec7c.png"></a></div>
+         </header>
+
+         <div id="nav">
+             <nav class="nav">
+                  <ul>
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Design</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Sys Admin</a></li>
+                      <li><a href="#">Miscellanea</a></li>
+                      <li><a href="#">Archive</a></li>
+                  </ul>
+             </nav>
+         </div>
+
+         <h1 class="subtitulo">Sharing ideas can change the world. It definitely changes us</h1>
+
+         <section class="conteudo">
+               <div class="default-page">
+                     <artigo class="post">
+
+                           <div class="diamante"><a href=""><img alt="diamante" src="./imagens/development-16fb1995786ab87fe8f3a675ad944f9e.png"></a></div>
+
+                           <header class="post-header">
+                              <h1 class="huge"><a href="">Game On! RubyConf Portugal is back in 2015</a></h1>
+                              <aside class="info">Written by <a href="#">Roberto</a> on 27, Feb 2015</aside>
+                           </header>
+
+                           <div class="corpo-artigo" >
+                                       <p>We're ready to announce that the 2nd edition of <a href="#">RubyConf Portugal</a> is coming and it's going to be bigger, bolder and awesome-er!</p>
+                                       <p>A long time passed since the day that we decided to create the <a href="#">very first</a> RubyConf Portugal. Since then we worked tirelessly to make sure that, with the first edition, we'd build the foundations for a consistent yearly conference about Ruby in Portugal. By the reactions from speakers and attendees, it seems we've hit a home run:</p>
+                                       <img alt="tw" src="./imagens/tweet.png">
+                                       <p>Again this year, this is an event envisioned by <a href="#">Group Buddies</a>, although everyone is invited to help us put it together. We want to join forces and unite the community, in order to create the best event we possibly can.</p>
+                                       <h1>Where?</h1>
+                                       <p>The conference will again take place in the beautiful city of Braga, Portugal's third biggest city, with an amazing history and a fantastic University. It was the European Youth Capital in 2012 and it is 30 mins away from Porto, the 
+                                       <a href="#">coolest city of Europe</a>. You probably already heard of it, at least about the Port Wine and the <a href="#">OPO airport
+                                       </a> (which, by the way, was also considered one of the best in Europe).</p>
+                                       <p>Braga can be described as an ancient, historic city, filled with young people, determined to make a difference. We have great tech companies here, with major international relevance, as well as young companies and startups.</p>
+                                       <h1>When?</h1>
+                                       <p>This year it will happen on September 13 to 15.</p>
+                                       <h1>CFP, Tickets, and more...</h1>
+                                       <p>We will soon be launching the Call For Proposals and we will start selling tickets next month. Sponsors and partners are welcome, so we'd love if you could help us spread the word. We will have a team of voluntaries which you can apply for, by emailing us at <a href="#">rubyconfpt@groupbuddies.com</a>.</p>
+                                       <p>We are aware of the challenge that it represents to top last year's edition. Creating such an ambitious conference is far from being an easy task, but we're confident that the portuguese ruby community will again embrace this event as a way to unite itself and put Portugal on the map, not only amongst ruby conferences, but also amongst the OSS community in general.</p>
+                                       <p>We hope to see you all this fall in Braga.</p>
+                           </div>
+                           <aside class="info comment"><a href="#">Comment this post</a></aside>
+                           <div class="hire-us">Want to hire us? <a href="#" target="blank">Get in touch</a></div>
+
+                           <section class="author">
+                              <div class="photo"><img alt="roberto" src="./imagens/roberto-machado-313485b8bfc3bef5b52c0946a9e5e6e3.png"></div>
+                              <div class="author-info">
+                                 <h2 class="author-title">About Roberto Machado</h2>
+                                 <p class="author-bio">Founded Group Buddies in 2011. Lean Startup Minho founder. Minho.rb founder. </p>
+                                 <aside class="info small">Read more from <a></a><a href="#">Roberto</a> or follow him on <a></a><a href="#">Twitter</a></aside>
+                              </div>
+                           </section>    
+                     </artigo>
+               </div>
+         </section>
+         <section class="conteudo">
+               <div class="default-page">
+                     <artigo class="post">
+                           <div class="diamante"><a href=""><img alt="diamante" src="./imagens/development-16fb1995786ab87fe8f3a675ad944f9e.png"></a></div>
+                      <header class="post-header">
+                           <h1 class="huge"><a href="https://blog.groupbuddies.com/posts/51-getting-hooked">Getting Hooked</a></h1>
+                           <aside class="info">Written by <a href="#">Miguel</a> on 18, Feb 2015</aside>
+                      </header>
+                      <div class="corpo-artigo">
+                           <p>I said it before and I'll say it again, several times: Automation is awesome.</p>
+                           <p>I previously showed an example of how you can automate the whole <a href="#">process of merging pull requests</a>.</p>
+                           <p>Now I'd like to share another git tip that helps me speed up my workflow. This one is about <a href="#">git hooks</a>.</p>
+                           <h1>What are git hooks?</h1>
+                           <p>A git hook is a script that gets triggered automatically when certain events happen (e.g. when creating a new commit). Now you're probably remembering that Github has something similar, called <a href="#">Webhooks</a>. Those are the things that trigger your <a href="#">Travis CI</a> builds every time you push a new commit (that's just one example of the many integrations Github provides).</p>
+                           <p>While those are great for their purpose, git itself has its own hooks that you can use to your advantage in your local copy of a repository.</p>
+                           <p>Some of the most commonly used hooks include:
+                               * <strong>pre-commit</strong> Triggered when you invoke <code>git commit</code>, but before the commit is actually created
+                               * <strong>post-commit</strong> Same thing, but gets triggered after the commit is created
+                               * <strong>post-checkout</strong> For when you use <code>git checkout</code>, or when the <code>HEAD</code> pointer changes.
+                           </p>
+                           <p>You can see the full list in the <a href="#">official docs</a>, but this gives you a good overview already.</p>
+                           <p>Hooks can also influence the behaviour of git itself. For instance, if a <code>pre-commit</code> hook exits with a non-zero status, the commit command is cancelled. This allows you to define some interesting behaviour.</p>
+                           <h1>Your first hook</h1>
+                           <p>To create a git hook for your project, all you have to do is create an executable in the <code>.git/hooks/</code> directory of your local repository, with the filename being the name of the hook you want to listen to. You can use any language you want (but I'm sticking to Ruby and Bash scripts here).</p>
+                           <p>Let's say you want to boost your morale, by printing a random joke to the terminal every time you create a new commit. You can do this with the following script:</p>
+                           <div class="highlight">
+                               <pre><span class="c1">#!/usr/bin/env ruby</span>
+
+                           <span class="nb">require</span> <span class="s1">'net/http'</span>
+                           <span class="nb">require</span> <span class="s1">'json'</span>
+
+                           <span class="n">uri</span> <span class="o">=</span> <span class="no">URI</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="s1">'http://api.icndb.com/jokes/random?limitTo=[nerdy]'</span><span class="p">)</span>
+                           <span class="n">response</span> <span class="o">=</span> <span class="no">Net</span><span class="o">::</span><span class="no">HTTP</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">uri</span><span class="p">)</span>
+                           <span class="n">joke</span> <span class="o">=</span> <span class="no">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">response</span><span class="p">)</span><span class="o">[</span><span class="s2">"value"</span><span class="o">][</span><span class="s2">"joke"</span><span class="o">]</span>
+
+                           <span class="nb">puts</span> <span class="n">joke</span>
+                           </pre>
+                           </div>
+
+                           <p>Save this file as <code>.git/hooks/post-commit</code>, give it execution permissions with <code>chmod +x .git/hooks/post-commit</code>, and you're good to go:</p>
+                           <div class="highlight">
+                               <pre><span class="nv">$ </span>git commit -m <span class="s2">"Testing my git hook"</span>
+                           Chuck Norris doesn<span class="err">'</span>t need to use AJAX because pages are too afraid to postback anyways.
+                           <span class="o">[</span>master e7c64d9<span class="o">]</span> Testing my git hook
+                           </pre>
+                           </div>
+                           <h1>How about something useful now?</h1>
+                           <p>Now we're ready to do some hooks that actually help our workflow.</p>
+                           <h2>Preventing mistakes</h2>
+                           <p>Have you ever pushed something, only to find out 5 minutes later that you forgot to remove that nasty breakpoint from the code? Or maybe you tend to push commits with small code style issues that your CI warns you about right away.</p>
+                           <p>A good solution could be having a hook that looked for those mistakes, and prevented you from committing them. For a Ruby project, it could be something like this:</p>
+                           <p>The first function will check if your <code>Gemfile</code> and <code>Gemfile.lock</code> match each other. If you update the first one, but forget to stage the second one, that's usually a mistake. And you don't need to bother your CI server when mistakes are easily and quickly detected.</p>
+                           <p>If that check passes, the script will also run your test suite.</p>
+                           <p>That last detail is probably an overkill. You don't want your entire test suite to be run every time. But maybe you have a smaller subset of that, or a quick tool you use for code style checks? <a href="#">Aaron Patterson</a> created a <a href="#">gist</a> that allows you to detect which specs are affected by your changes, and this is a great use case for it.
+                               Another option is to run <a href="#">rubocop</a> or some other code quality tool that you might have integrated in your workflow.
+                           </p>
+                           <h2>Updating your metrics</h2>
+                           <p><a href="#">Code Climate</a> is a great tool. But it's also an expensive one (for private repositories, at least).</p>
+                           <p>A poor man's alternative is to use a local tool like <a href="#">metric_fu</a>, that compiles a list of issues found in your code. It also plots how the issues count progresses over time, which is interesting for analysing how your projects evolve (or degrade).</p>
+                           <p>I liked the idea of maintaining a plot with the evolution of our projects, but I definitely can't rely on myself to remember to run metric_fu periodically. So I built a hook that does it for me.</p>
+                           <p>But for this case, doing that after every commit was not an option. That would end up plotting data about my feature branches, which did not reflect the state of the final code.</p>
+                           <p>I wanted to run this only for commits merged to the <code>master</code> branch. That requires a bit more work:</p>
+                           <p>Here I'm checking for three things before actually running metric<em>fu:
+                               1. Is the current branch <code>master</code>?
+                               2. Does this repository have a <code>Gemfile</code> (or rather, is this a Ruby project?)
+                               3. Is metric</em>fu installed?
+                           </p>
+                           <p>If everything checks, the metrics are saved to <code>.metrics</code>. The gem will take care of merging any previous results that already existed in there.</p>
+                           <p>It's also worth nothing the way I'm invoking <code>metric_fu</code>:</p>
+                           <p>I'm suppressing all output, including errors, and I'm running it in the background. Since it might be a long process, and I don't need the metrics right away, I can just keep going with my life.</p>
+                           <h2>Be creative</h2>
+                           <p>You can think of all sorts of other things to automate this way. For example, <a href="#">this artigo</a> by Tim pope <a href="#">Tim pope</a> covers how you can have your <a href="#">ctags</a> entirely managed by git hooks.
+                               Be sure to leave a comment if you have an interesting idea for another git hook. I'm actively looking for more.
+                           </p>
+                      </div>
+                      <aside class="info comment"><a href="#">Comment this post</a></aside>
+                      <div class="hire-us">Want to hire us? <a href="#" target="blank">Get in touch</a></div>
+                      <section class="author">
+                           <div class="photo"><img alt="Miguel Palhas" src="./imagens/miguel-palhas-26ae7a4cd25180341e60aec58f4fa7b4.png"></div>
+                           <div class="author-info">
+                               <h2 class="author-title">About Miguel Palhas</h2>
+                               <p class="author-bio">Loves programming since ever. Is obsessed with optimizing and automating everything he does.
+                                    Joined GB for a chance to keep doing what he does best, while becoming more involved in the open source world.
+                               </p>
+                               <aside class="info small">Read more from <a></a><a href="#">Miguel</a> or follow him on <a></a><a href="#">Twitter</a></aside>
+                           </div>
+                      </section>
+                  </artigo>
+
+
+               </div>
+         </section>
+      </div>
+      </section>
+       </section>
+         <footer class="rodape">This is our blog, designed to share our thoughts about the job we love.</footer>
+      <div id="nav">
+         <nav class="nav">
+            <ul>
+               <li><a href="#">All</a></li>
+               <li><a href="#">Development</a></li>
+               <li><a href="#">Design</a></li>
+               <li><a href="#">Business</a></li>
+               <li><a href="#">Sys Admin</a></li>
+               <li><a href="#">Miscellanea</a></li>
+               <li><a href="#">Archive</a></li>
+            </ul>
+         </nav>
+   </body>
+</html>
+
+
+
