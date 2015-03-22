@@ -13,7 +13,7 @@
         <%= link_to post.title, post %>
       </h2>
       <aside class="info">
-        Written by <%= link_to post.author.name.split(' ')[0], post.author %> on <%= post.created_at.strftime('%-d, %b %Y') %>
+        Written by <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> on <%= post.created_at.strftime('%-d, %b %Y') %>
       </aside>
     </div>
   </article>

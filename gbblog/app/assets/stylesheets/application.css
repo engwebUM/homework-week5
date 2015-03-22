@@ -69,6 +69,11 @@
     text-decoration: none;
   }
 
+  nav a:hover {
+    color: #0091da;
+    text-decoration: underline;
+  }
+
   .motto h1 {
     color: #999;
     font-size: 20px;
@@ -119,6 +124,10 @@
   .posts h1 a {
     color: #333;
     text-decoration: none;
+  }
+
+  .posts h1 a:hover {
+    text-decoration: underline;
   }
 
   .posts .post-info {

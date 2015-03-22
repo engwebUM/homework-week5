@@ -8,7 +8,7 @@
         <%= link_to post.title, post %>
       </h1>
       <aside class="post-info">
-        Written by <%= link_to post.author.name.split(' ')[0], post.author %> on <%= post.created_at.strftime('%-d, %b %Y') %>
+        Written by <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> on <%= post.created_at.strftime('%-d, %b %Y') %>
       </aside>
     </header>
     <div class="post-body">
@@ -31,7 +31,7 @@
         <h2>About <%= post.author.name %></h2>
         <p class="author-bio"><%= post.author.bio %></p>
         <aside class="post-info">
-          Read more from <%= link_to post.author.name.split(' ')[0], post.author %> or follow him on <%= link_to 'Twitter', post.author.twitter %>
+          Read more from <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> or follow him on <%= link_to 'Twitter', post.author.twitter %>
         </aside>
       </div>
     </section>
