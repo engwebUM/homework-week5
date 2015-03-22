@@ -3,7 +3,7 @@
   <ul>
     <li><%= link_to 'All', '/' %></li>
     <% @categories.each do |category| %>
-      <li><%= link_to category.name.titleize, archive_path(category) %></li>
+      <li><%= link_to category.name.titleize, category %></li>
     <% end %>
     <li><%= link_to 'Archive', '/archive' %></li>
   </ul>

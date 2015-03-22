@@ -1,2 +1,2 @@
-module ArchivesHelper
+module ArchiveHelper
 end
