@@ -1,0 +1,175 @@
+// Place all the styles related to the blogMainPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Filo*/
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+/*Title*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
+/*Details*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400italic);
+/*Body*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+/*Hire us*/
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+
+*{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+header{
+	height:50px;
+	width: 50%;
+	margin: 25px auto auto;
+}
+
+header .logo{	
+	display: inline-block;
+}
+
+header .linkSite{
+	display: inline-block;
+	float: right;
+}
+
+nav{
+	background: #eee;
+	height:100px;
+	text-align: center;
+	width: 100%;
+}
+
+nav ul{
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #969595;
+	font-weight: bold;
+	padding: 40px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:active,nav a:visited {
+	background: none;
+	color: #969595;
+    display: inline;
+    text-decoration: none;
+}
+
+nav a:hover {
+	background: none;
+	color: #3399ff;
+    display: inline;
+    text-decoration: underline;
+}
+
+nav li+li:before {
+    content: "/";
+    padding: 3px;
+}
+
+aside .phrase{
+	color: grey;
+	font-family: 'Courgette', cursive;
+	padding:10px;
+	text-align: center;
+}
+
+main{
+	width: 70%;
+	height: auto;
+	margin: 25px auto auto;
+}
+
+main .postIcon{
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	width: 10%;
+}
+
+main .postBody{
+	display: inline-block;
+	width: 80%;
+}
+
+.postTitle{
+	color: #2d2d2d;
+	font-size: 50px;
+	line-height: 50px;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+.postDetails, .postDetails a,.postDetails a:hover,.postDetails a:link,.postDetails a:visited{
+	padding-top: 15px;
+	font-size: 18px;
+	color: #9c9b9b;
+	font-family: 'Josefin Slab', serif;
+	background: none
+}
+
+.commentOnPost a,.commentOnPost a:active,.commentOnPost a:link,.commentOnPost a:visited,.commentOnPost a:hover{
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	background: none;
+	color: #666;
+}
+
+.hiringOnPost{
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px;
+}
+
+.hiringOnPost a,.hiringOnPost a:active,.hiringOnPost a:visited,.hiringOnPost a:hover{
+	color: #3399ff;
+	background: none
+}
+
+.postText{
+	color: #2d2d2d;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 25px;
+	text-align: justify;
+	line-height: 40px;
+    text-justify: inter-word;
+}
+
+hr{
+	border: dotted 1px;
+	opacity: 0.5;
+}
+
+.authorPhoto{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	vertical-align: top;
+	width: 10%;
+}
+
+.authorTitle{
+	color: #3399ff;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 30px;
+}
+
+.authorDetails{
+	display: inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 25px;
+	margin:20px;
+	text-align: justify;
+    text-justify: kashida;
+	width: 60%
+}
+
+article{
+	margin-top: 30px;
+	margin-bottom: 70px;
+
+}

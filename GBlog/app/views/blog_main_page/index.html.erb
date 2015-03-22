@@ -1,0 +1,30 @@
+<%@posts.each do |post|%>
+<article>
+			<div class="postIcon">
+				<%=image_tag("post_types/"+post.post_source,alt:"Development")%>
+			</div>
+			<div class="postBody">
+				<h1 class="postTitle"><%=post.post_title%></h1>
+				<p class="postDetails">Written by <%=link_to post.author%> on <%=post.post_date.to_formatted_s(:rfc822) %></p>
+				</br>
+				<p class="postText">
+					<%=post.post_text%>
+				</p>
+				<br>
+				<p class="commentOnPost"><%=link_to "Comment on this post"%></p>
+				<p class="hiringOnPost">Want to hire us? <%=link_to "Get in touch","https://groupbuddies.typeform.com/to/tgcrRI"%></p>
+				<hr>
+				<div class="postAuthor"></div>
+					<div class="authorPhoto"</div>
+						<%=image_tag("profile_pictures/"+post.author_photo,alt:"Author")%>
+					</div>
+					<div class="authorDetails">
+						<p class="authorTitle">About <%=post.author%></p>
+						<br>
+						<p class="authorPresentation"><%=post.author_desc%></p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<%end%>
+
