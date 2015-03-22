@@ -1,0 +1,152 @@
+html{
+	text-align: left;
+	margin-left: 260px;
+	margin-right: 260px;
+	font-family: Arial;
+}
+
+.header{
+	margin-top: 25px;
+}
+
+.heart-shaped-box{
+	float: right;
+	margin-top:calc(-10px);
+}
+
+.nav{
+	text-align:center;
+	margin-top: 20px;
+	margin-left:-265px;
+	margin-right: -265px;
+	background-color:#f6f6f8;
+	padding: 15px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.nav li{
+	display:inline
+}
+
+.nav li+li:before{
+	color:#999999;
+	content:"/";
+	padding:0 5px
+}
+
+.nav a{
+	color:#666666;
+	text-decoration:none
+}
+
+.nav a:hover{
+	color:#0091da;
+	text-decoration:underline
+}
+
+.motto{
+	margin-left:-265px;
+	margin-right: -265px;
+	text-align: center;
+	color:#999999;
+	font-family: Arial;
+	font-size:17px;
+	font-style:italic;
+	font-weight: lighter;
+	margin-top:1rem;
+	margin-bottom:120px;
+}
+
+.post{
+	margin-top: 2rem;
+	font-size:22px;
+	font-weight: lighter;
+	margin-bottom: 2rem; 
+}
+
+strong{
+	font-weight:bold
+}
+
+.post-title{
+	line-height:50px;
+	font-size: 46px;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+
+.post-icon{
+	position:absolute;
+	margin-left:calc(0px - 65px - 1rem);
+}
+
+p a{
+	color: inherit;
+}
+
+.small{
+	font-size:16px;
+}
+
+.info{
+	margin-top:0px; 
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 20px;
+	color: grey;
+}
+
+.post-comment {
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 20px;
+	color: grey;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.hire{
+	margin-top: 35px;
+	text-align:center;
+	color:#333333;
+	margin-bottom: 35px;
+}
+
+.hire a{
+	color:#0091da
+}
+
+.author img{
+	position: absolute;
+	margin-top: -200px;
+}
+
+.author h2{
+	color:#0091da;
+	font-size:26px;
+}
+
+.author p{
+	font-weight: lighter;
+	font-size: 20px;	
+}
+
+.author-info{
+	width:70%;
+	margin-left: 125px;
+	margin-bottom: 50px;
+}
+
+.footer{
+	background-color:#f6f6f8;
+	text-align:center;
+	font-size:18px;
+	color:white;
+	background-color:#0091da;
+	padding:30px 0;
+	margin-bottom:0;
+	margin-top:200px;
+	margin-left:-265px;
+	margin-right: -265px;
+}
