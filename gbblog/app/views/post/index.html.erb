@@ -40,6 +40,8 @@
 <% if @posts.size == 0 %>
   <em>No posts found</em>
 <% end %>
-<div class="read-more">
-  <a href="https://blog.groupbuddies.com/archive">Want to read more? Check all of our posts here</a>
-</div>
+<% if @posts.size > 1 %>
+  <div class="read-more">
+    <a href="https://blog.groupbuddies.com/archive">Want to read more? Check all of our posts here</a>
+  </div>
+<% end %>
