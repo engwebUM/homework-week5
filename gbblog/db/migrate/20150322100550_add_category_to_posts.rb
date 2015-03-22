@@ -1,7 +1,5 @@
 class AddCategoryToPosts < ActiveRecord::Migration
   def change
-    add_column :posts, :category_id, :reference
-    add_index :posts, :category_id
-    add_foreign_key :posts, :categories
+    add_reference :posts, :category, index:true, foreign_key: true
   end
 end

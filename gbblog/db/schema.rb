@@ -29,7 +29,16 @@ ActiveRecord::Schema.define(version: 20150322100550) do
     t.datetime "updated_at", null: false
   end
 
-# Could not dump table "posts" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "author_id"
+    t.integer  "category_id"
+  end
+
+  add_index "posts", ["author_id"], name: "index_posts_on_author_id"
+  add_index "posts", ["category_id"], name: "index_posts_on_category_id"
 
 end

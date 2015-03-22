@@ -1,7 +1,9 @@
 class AddAuthorToPosts < ActiveRecord::Migration
   def change
-    add_column :posts, :author_id, :reference
-    add_index :posts, :author_id
-    add_foreign_key :posts, :authors
+    add_reference :posts, :author, index:true, foreign_key: true
+    # add_index :posts, :author
+    # add_foreign_key :posts, :author
+    #
+    # add_reference :uploads, :user, index: true
   end
 end
