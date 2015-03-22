@@ -1,0 +1,20 @@
+<h1 class="archives">Archives</h1>
+<% year = nil %>
+<% @posts.each do |post| %>
+  <% if year != post.created_at.year %>
+    <% year = post.created_at.year %>
+    <h2 class="archive-year"><%= year %></h2>
+  <% end %>
+
+  <article class="archive-post">
+    <div class="date"><%= post.created_at.strftime('%b %-d') %></div>
+    <div class="archive-body">
+      <h2 class="title">
+        <%= link_to post.title, post %>
+      </h2>
+      <aside class="info">
+        Written by <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> on <%= post.created_at.strftime('%-d, %b %Y') %>
+      </aside>
+    </div>
+  </article>
+<% end %>

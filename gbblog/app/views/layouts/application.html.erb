@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @page_title ||= 'Group Buddies Blog' %></title>
+    <meta charset="utf-8" />
+    <%= stylesheet_link_tag "application" %>
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+
+    <%= render 'layouts/navbar' %>
+
+    <%= render 'layouts/motto' %>
+
+    <section class="content">
+      <div class="posts">
+        <%= yield %>
+      </div>
+    </section>
+
+    <%= render 'layouts/footer' %>
+
+    <%= render 'layouts/navbar' %>
+  </body>
+</html>

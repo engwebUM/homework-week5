@@ -1,0 +1,48 @@
+<% @posts.each do |post| %>
+  <article class="post">
+    <div class="category-icon">
+      <%= link_to (image_tag post.category.photo, alt:post.category.name), post.category %>
+    </div>
+    <header class="post-header">
+      <h1>
+        <%= link_to post.title, post %>
+      </h1>
+      <aside class="post-info">
+        Written by <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> on <%= post.created_at.strftime('%-d, %b %Y') %>
+      </aside>
+    </header>
+    <div class="post-body">
+      <%= post.text.html_safe %>
+    </div>
+    <aside class="post-info post-comment">
+      <%= link_to 'Comment this post', post_path(post) << '#disqus_t' %>
+    </aside>
+    <div class="post-share">
+      <a class="twitter-share-button" data-text="<%= post.title %>" data-url="<%= 'http://blog.groupbuddies.com' << post_path(post) %>" data-via="groupbuddies" href="https://twitter.com/share">Tweet</a>
+      <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    <div class="hire">
+      Want to hire us? <a target="blank" href="https://groupbuddies.typeform.com/to/tgcrRI">Get in touch</a>
+    </div>
+    <section class="author">
+      <div class="author-photo">
+        <%= image_tag post.author.photo, alt:post.author.name %>
+      </div>
+      <div class="author-info">
+        <h2>About <%= post.author.name %></h2>
+        <p class="author-bio"><%= post.author.bio %></p>
+        <aside class="post-info">
+          Read more from <%= link_to post.author.name.split(' ')[0], author_path(post.author.name.gsub(' ', '-')) %> or follow him on <%= link_to 'Twitter', post.author.twitter %>
+        </aside>
+      </div>
+    </section>
+  </article>
+<% end %>
+<% if @posts.size == 0 %>
+  <em>No posts found</em>
+<% end %>
+<% if @posts.size > 1 %>
+  <div class="read-more">
+    <%= link_to 'Want to read more? Check all of our posts here', '/archive' %>
+  </div>
+<% end %>
