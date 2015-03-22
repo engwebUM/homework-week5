@@ -1,0 +1,111 @@
+<p id="notice"><%= notice %></p>
+
+<head>
+	<title>Group Buddies Blog</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href="#"> 
+				<%= image_tag("logo.png") %>
+			</a>	
+		</div>	
+
+		<div class="heart">
+			<%= image_tag("heart.png") %>
+		</div>	
+	</header>
+	
+	<div class="tabs">
+		<nav class="list">
+			<ul>
+				<li> <a href="#"> All </a> </li>
+				<li> <a href="#"> Development </a> </li>
+				<li> <a href="#"> Design </a> </li>
+				<li> <a href="#"> Business </a> </li>
+				<li> <a href="#"> Sys Admin </a> </li>
+				<li> <a href="#"> Miscellanea </a> </li>
+				<li> <a href="#"> Archive </a> </li>
+			</ul>	
+		</nav>	
+	</div>	
+	
+	<section>
+		<h1 class="ideas_quote"> Sharing ideas can change the world. It definitely changes us </h1>
+	</section>
+
+	<section class="content">
+			<article>
+				<div class="icon">
+					<a href="#">
+						<%= image_tag("development.png") %>
+					</a>	
+				</div>	
+				
+				<header class="article-header">
+					<h1 class="article-title">
+					<%= link_to @article.title, article_path(@article.id) %>
+						<!--a href="#"> <%= @article.title %> </a-->
+					</h1>
+				</header>	
+
+				<div class="written">
+					Written by <a href="#"> <%= @article.author %> </a> on <%= @article.time %>
+				</div>
+
+				<div class="article-body">
+					<%= @article.body %>
+				</div>
+				
+				<div class="comment">
+					<a href="#"> Comment this post </a>
+				</div>
+				
+				<div class="tweet">
+					<a href="#"> Tweet </a>
+				</div>
+				
+				<div class="hire">
+					Want to hire us? <a href="#"> Get in touch </a>
+				</div>	
+				
+				<div class="author">
+					<%= image_tag(@article.author_img_link) %>
+					<div class="author-info">
+							<h2 class="author-title"> About <%= @article.author %> </h2>
+							<p class="description"> <%= @article.author_info %> </p>
+							<div class="author-read"> 
+								Read more from <a href="#"> <%= @article.author %> </a> or follow him on <a href="#"> Twitter </a> 	
+							</div>
+					 </div>
+				</div>	
+				<p> <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' } %> </p>
+			</article>	
+		
+	</section>	
+		
+	<section class="all-articles">
+		<a href="#"> Want to read more? Check all of our articles here </a>
+	</section>
+	
+	<footer class="footer"> This is our blog, designed to share our thoughts about the job we love </footer>
+
+	<div class="tabs">
+		<nav class="list">
+			<ul>
+				<li> <a href="#"> All </a> </li>
+				<li> <a href="#"> Development </a> </li>
+				<li> <a href="#"> Design </a> </li>
+				<li> <a href="#"> Business </a> </li>
+				<li> <a href="#"> Sys Admin </a> </li>
+				<li> <a href="#"> Miscellanea </a> </li>
+				<li> <a href="#"> Archive </a> </li>
+			</ul>	
+		</nav>	
+	</div>	
+</body>	
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
