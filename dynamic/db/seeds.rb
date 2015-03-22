@@ -8,9 +8,9 @@
 icon1 = Icon.create(image: 'icon1.png')
 icon2 = Icon.create(image: 'icon2.png')
 
-a1 = Author.create(first_name: 'Roberto', last_name: 'Machado', photo: 'roberto.png', about: '')
-a2 = Author.create(first_name: 'Luis', last_name: 'Zamith', photo: 'zamith.png', about: '')
-a3 = Author.create(first_name: 'Miguel', last_name: 'Palhas', photo: 'palhas.png', about: '')
+a1 = Author.create(first_name: 'Roberto', last_name: 'Machado', photo: 'roberto.png', about: 'Founded Group Buddies in 2011. Learn Startup Minho founder. Minho.rb founder.')
+a2 = Author.create(first_name: 'Luis', last_name: 'Zamith', photo: 'zamith.png', about: 'Founder and Developer at Group Buddies where he tries to improve the web one website at a time. Loves the tech world, especially applicational design, but can be seen, on occasion, working on user experience problems or even system administration. His motto is "Start small or not at all".')
+a3 = Author.create(first_name: 'Miguel', last_name: 'Palhas', photo: 'palhas.png', about: 'Loves programming since ever. Is obsessed with optimizing and automating everything he does. Joined GB for a chance to keep doing what he does best, while becoming more involved in the open source world.')
 
 Article.create(
   title: 'Game Oh! RubyConf Portugal is back in 2015',
