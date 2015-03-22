@@ -34,10 +34,41 @@ header .linkSite{
 }
 
 nav{
-	background: grey;
+	background: #eee;
 	height:100px;
-	opacity: 0.2;
+	text-align: center;
 	width: 100%;
+}
+
+nav ul{
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #969595;
+	font-weight: bold;
+	padding: 40px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a:active,nav a:visited {
+	background: none;
+	color: #969595;
+    display: inline;
+    text-decoration: none;
+}
+
+nav a:hover {
+	background: none;
+	color: #3399ff;
+    display: inline;
+    text-decoration: underline;
+}
+
+nav li+li:before {
+    content: "/";
+    padding: 3px;
 }
 
 aside .phrase{
@@ -79,7 +110,7 @@ main .postBody{
 	font-family: 'Josefin Slab', serif;
 }
 
-.commentOnPost a,.commentOnPost a:active,.commentOnPost a:visited,.commentOnPost a:hover{
+.commentOnPost a,.commentOnPost a:active,.commentOnPost a:link,.commentOnPost a:visited,.commentOnPost a:hover{
 	font-family: 'Courgette', cursive;
 	font-size: 18px;
 	background: none;
@@ -107,6 +138,10 @@ main .postBody{
     text-justify: inter-word;
 }
 
+hr{
+	border: dotted 1px;
+	opacity: 0.5;
+}
 
 .authorPhoto{
 	display: inline-block;

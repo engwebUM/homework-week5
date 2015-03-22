@@ -16,16 +16,21 @@
 		</div>
 	</header>
 	<nav>
-		
+		<ul>
+		<li><%=link_to "All"%></li>
+		<li><%=link_to "Development"%></li>
+		<li><%=link_to "Design"%></li>
+		<li><%=link_to "Business"%></li>
+		<li><%=link_to "Sys Admin"%></li>
+		<li><%=link_to "Miscellanea"%></li>
+		<li><%=link_to "Archieve"%></li>
+		</ul>
 	</nav>
 	<aside>
 		<p class="phrase">Sharing ideas can change the world. It definitely changes us</p>
 	</aside>
 	<main>
-		
 		<%= yield %>
 	</main>
-
-
 </body>
 </html>
