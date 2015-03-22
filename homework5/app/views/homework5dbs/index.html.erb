@@ -1,126 +1,111 @@
-<p id="notice"><%= notice %></p>
-
-
+<p  id="notice"><%=  notice  %></p>
 <html>
   <head>
-    <title>Group Buddies Blog</title>
+    <title>Group  Buddies  Blog</title>
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo"><a href=""><%= image_tag("logo-15c19284886b7a7c75b7cb69f0ae07e4.png") %></a></div>
-      <div class="heart"><a href=""><%= image_tag("heart-small-f50c3e44fa78b838c057170a94c5ec7c.png")%></a></div>
+    <header  class="header">
+      <div  class="logo"><a  href=""><%=  image_tag("logo-15c19284886b7a7c75b7cb69f0ae07e4.png")  %></a></div>
+      <div  class="heart"><a  href=""><%=  image_tag("heart-small-f50c3e44fa78b838c057170a94c5ec7c.png")%></a></div>
     </header>
 
-    <div id="nav">
-      <nav class="nav">
+    <div  id="nav">
+      <nav  class="nav">
         <ul>
-          <li><a href="">All</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
-          <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
+          <li><a  href="">All</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/development">Development</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/design">Design</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/business">Business</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/sys-admin">Sys  Admin</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
+          <li><a  href="https://blog.groupbuddies.com/archive">Archive</a></li>
         </ul>
       </nav>
     </div>
 
     <section>
-      <h1 class="quote">Sharing ideas can change the world. It definitely changes us</h1>
+      <h1  class="quote">Sharing  ideas  can  change  the  world.  It  definitely  changes  us</h1>
     </section>
 
-    <section class="content">
-      <div class="default-page">
-
-
-          <% @homework5dbs.each do |homework5db| %>
-            <article class="post">
-              <div class="post-icon"><a href=""><%= image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png") %></a></div>
-              <header class="post-header">
-                <h1 class="huge"><a href=""><%= homework5db.title %></a></h1>
-                <aside class="info">Written by <a href="#"><%= homework5db.author %></a> <%= homework5db.date %></aside>
+    <section  class="content">
+      <div  class="default-page">
+          <%  @homework5dbs.each  do  |homework5db|  %>
+            <article  class="post">
+              <div  class="post-icon"><a  href=""><%=  image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png")  %></a></div>
+              <header  class="post-header">
+                <h1  class="huge"><a  href=""><%=  homework5db.title  %></a></h1>
+                <aside  class="info">Written  by  <a  href="#"><%=  homework5db.author  %></a>  <%=  homework5db.date  %></aside>
               </header>
-
-              <div class="post-body" data-twttr-id="twttr-sandbox-0">
-                <p><%= homework5db.text %>
+              <div  class="post-body"  data-twttr-id="twttr-sandbox-0">
+                <p><%=  homework5db.text  %>
               </div>
-
-              <aside class="info comment"><a href=" ">Comment this post</a></aside>
-              <div class="hire-us">Want to hire us? <a href="https://groupbuddies.typeform.com/to/tgcrRI" target="blank">Get in touch</a></div>
-
-              <%= image_tag("p.png") %>
-              <section class="author2">
-                <div class="photo2"><%= image_tag("icon-db-circle.png") %></div>
-                <div class="author-info2">
-                  <h2 class="author-title2">About <%= homework5db.author %> </h2>
-                  <p class="author-bio2">DataBase bio. </p>
-                  <aside class="info small">Read more from <a></a><a href="https://blog.groupbuddies.com/author/Roberto-Machado">DataBase</a> or follow him on <a></a><a href="">Twitter</a></aside>
+              <aside  class="info  comment"><a  href="  ">Comment  this  post</a></aside>
+              <div  class="hire-us">Want  to  hire  us?  <a  href="https://groupbuddies.typeform.com/to/tgcrRI"  target="blank">Get  in  touch</a></div>
+              <%=  image_tag("p.png")  %>
+              <section  class="author2">
+                <div  class="photo2"><%=  image_tag("icon-db-circle.png")  %></div>
+                <div  class="author-info2">
+                  <h2  class="author-title2">About  <%=  homework5db.author  %>  </h2>
+                  <p  class="author-bio2">DataBase  bio.  </p>
+                  <aside  class="info  small">Read  more  from  <a></a><a  href="https://blog.groupbuddies.com/author/Roberto-Machado">DataBase</a>  or  follow  him  on  <a></a><a  href="">Twitter</a></aside>
                 </div>
-              </section>   
+              </section>    
             </article>
-           <% end %>
-        
+            <%  end  %>
 
-
-        <article class="post">
-            <div class="post-icon"><a href=""><%= image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png") %></a></div>
-            <header class="post-header">
-              <h1 class="huge"><a href="">Game On! RubyConf Portugal is back in 2015</a></h1>
-              <aside class="info">Written by <a href="#">Roberto</a> on 17, Feb 2015</aside>
+        <article  class="post">
+            <div  class="post-icon"><a  href=""><%=  image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png")  %></a></div>
+            <header  class="post-header">
+              <h1  class="huge"><a  href="">Game  On!  RubyConf  Portugal  is  back  in  2015</a></h1>
+              <aside  class="info">Written  by  <a  href="#">Roberto</a>  on  17,  Feb  2015</aside>
             </header>
-
-            <div class="post-body" data-twttr-id="twttr-sandbox-0">
-                    <p>We're ready to announce that the 2nd edition of <a href="http://rubyconf.pt/">RubyConf Portugal</a> is coming and it's going to be bigger, bolder and awesome-er!</p>
-                    <p>A long time passed since the day that we decided to create the <a href="https://blog.groupbuddies.com/posts/31-brace-yourselves-rubyconf-portugal-is-coming">very first</a> RubyConf Portugal. Since then we worked tirelessly to make sure that, with the first edition, we'd build the foundations for a consistent yearly conference about Ruby in Portugal. By the reactions from speakers and attendees, it seems we've hit a home run:</p>
-                    <%= image_tag("t1.png") %>
-                    <%= image_tag("t2.png") %>
-                    <script async="" src="./Group Buddies Blog_files/widgets.js" charset="utf-8"></script>
-                    <p>Again this year, this is an event envisioned by <a href="https://groupbuddies.com/">Group Buddies</a>, although everyone is invited to help us put it together. We want to join forces and unite the community, in order to create the best event we possibly can.</p>
+            <div  class="post-body"  data-twttr-id="twttr-sandbox-0">
+                    <p>We're  ready  to  announce  that  the  2nd  edition  of  <a  href="http://rubyconf.pt/">RubyConf  Portugal</a>  is  coming  and  it's  going  to  be  bigger,  bolder  and  awesome-er!</p>
+                    <p>A  long  time  passed  since  the  day  that  we  decided  to  create  the  <a  href="https://blog.groupbuddies.com/posts/31-brace-yourselves-rubyconf-portugal-is-coming">very  first</a>  RubyConf  Portugal.  Since  then  we  worked  tirelessly  to  make  sure  that,  with  the  first  edition,  we'd  build  the  foundations  for  a  consistent  yearly  conference  about  Ruby  in  Portugal.  By  the  reactions  from  speakers  and  attendees,  it  seems  we've  hit  a  home  run:</p>
+                    <%=  image_tag("t1.png")  %>
+                    <%=  image_tag("t2.png")  %>
+                    <script  async=""  src="./Group  Buddies  Blog_files/widgets.js"  charset="utf-8"></script>
+                    <p>Again  this  year,  this  is  an  event  envisioned  by  <a  href="https://groupbuddies.com/">Group  Buddies</a>,  although  everyone  is  invited  to  help  us  put  it  together.  We  want  to  join  forces  and  unite  the  community,  in  order  to  create  the  best  event  we  possibly  can.</p>
                     <h1>Where?</h1>
-                    <p>The conference will again take place in the beautiful city of Braga, Portugal's third biggest city, with an amazing history and a fantastic University. It was the European Youth Capital in 2012 and it is 30 mins away from Porto, the <a href="https://www.europeanbestdestinations.org/top/europe-best-destinations-2014">coolest city of Europe</a>. You probably already heard of it, at least about the Port Wine and the <a href="https://www.ana.pt/en-US/Topo/institucional/aboutANA/News/News/Pages/Porto-Airport-once-again-voted-3rd-best-in-Europe.aspx">OPO airport</a> (which, by the way, was also considered one of the best in Europe).</p>
-                    <p>Braga can be described as an ancient, historic city, filled with young people, determined to make a difference. We have great tech companies here, with major international relevance, as well as young companies and startups.</p>
+                    <p>The  conference  will  again  take  place  in  the  beautiful  city  of  Braga,  Portugal's  third  biggest  city,  with  an  amazing  history  and  a  fantastic  University.  It  was  the  European  Youth  Capital  in  2012  and  it  is  30  mins  away  from  Porto,  the  <a  href="https://www.europeanbestdestinations.org/top/europe-best-destinations-2014">coolest  city  of  Europe</a>.  You  probably  already  heard  of  it,  at  least  about  the  Port  Wine  and  the  <a  href="https://www.ana.pt/en-US/Topo/institucional/aboutANA/News/News/Pages/Porto-Airport-once-again-voted-3rd-best-in-Europe.aspx">OPO  airport</a>  (which,  by  the  way,  was  also  considered  one  of  the  best  in  Europe).</p>
+                    <p>Braga  can  be  described  as  an  ancient,  historic  city,  filled  with  young  people,  determined  to  make  a  difference.  We  have  great  tech  companies  here,  with  major  international  relevance,  as  well  as  young  companies  and  startups.</p>
                     <h1>When?</h1>
-                    <p>This year it will happen on September 13 to 15.</p>
-                    <h1>CFP, Tickets, and more...</h1>
-                    <p>We will soon be launching the Call For Proposals and we will start selling tickets next month. Sponsors and partners are welcome, so we'd love if you could help us spread the word. We will have a team of voluntaries which you can apply for, by emailing us at <a href="mailto:rubyconfpt@groupbuddies.com">rubyconfpt@groupbuddies.com</a>.</p>
-                    <p>We are aware of the challenge that it represents to top last year's edition. Creating such an ambitious conference is far from being an easy task, but we're confident that the portuguese ruby community will again embrace this event as a way to unite itself and put Portugal on the map, not only amongst ruby conferences, but also amongst the OSS community in general.</p>
-                    <p>We hope to see you all this fall in Braga.</p>
+                    <p>This  year  it  will  happen  on  September  13  to  15.</p>
+                    <h1>CFP,  Tickets,  and  more...</h1>
+                    <p>We  will  soon  be  launching  the  Call  For  Proposals  and  we  will  start  selling  tickets  next  month.  Sponsors  and  partners  are  welcome,  so  we'd  love  if  you  could  help  us  spread  the  word.  We  will  have  a  team  of  voluntaries  which  you  can  apply  for,  by  emailing  us  at  <a  href="mailto:rubyconfpt@groupbuddies.com">rubyconfpt@groupbuddies.com</a>.</p>
+                    <p>We  are  aware  of  the  challenge  that  it  represents  to  top  last  year's  edition.  Creating  such  an  ambitious  conference  is  far  from  being  an  easy  task,  but  we're  confident  that  the  portuguese  ruby  community  will  again  embrace  this  event  as  a  way  to  unite  itself  and  put  Portugal  on  the  map,  not  only  amongst  ruby  conferences,  but  also  amongst  the  OSS  community  in  general.</p>
+                    <p>We  hope  to  see  you  all  this  fall  in  Braga.</p>
             </div>
-            <aside class="info comment"><a href=" ">Comment this post</a></aside>
-            <div class="hire-us">Want to hire us? <a href="https://groupbuddies.typeform.com/to/tgcrRI" target="blank">Get in touch</a></div>
-
-            <%= image_tag("p.png") %>
-            <section class="author">
-              <div class="photo"><%= image_tag("roberto-machado-313485b8bfc3bef5b52c0946a9e5e6e3.png") %></div>
-              <div class="author-info">
-                <h2 class="author-title">About Roberto Machado</h2>
-                <p class="author-bio">Founded Group Buddies in 2011. Lean Startup Minho founder. Minho.rb founder. </p>
-                <aside class="info small">Read more from <a></a><a href="https://blog.groupbuddies.com/author/Roberto-Machado">Roberto</a> or follow him on <a></a><a href="https://twitter.com/rmdgb">Twitter</a></aside>
+            <aside  class="info  comment"><a  href="  ">Comment  this  post</a></aside>
+            <div  class="hire-us">Want  to  hire  us?  <a  href="https://groupbuddies.typeform.com/to/tgcrRI"  target="blank">Get  in  touch</a></div>
+            <%=  image_tag("p.png")  %>
+            <section  class="author">
+              <div  class="photo"><%=  image_tag("roberto-machado-313485b8bfc3bef5b52c0946a9e5e6e3.png")  %></div>
+              <div  class="author-info">
+                <h2  class="author-title">About  Roberto  Machado</h2>
+                <p  class="author-bio">Founded  Group  Buddies  in  2011.  Lean  Startup  Minho  founder.  Minho.rb  founder.  </p>
+                <aside  class="info  small">Read  more  from  <a></a><a  href="https://blog.groupbuddies.com/author/Roberto-Machado">Roberto</a>  or  follow  him  on  <a></a><a  href="https://twitter.com/rmdgb">Twitter</a></aside>
               </div>
-            </section>   
+            </section>    
         </article>
-
-
-
       </div>
     </section>
-     </section>
-      <footer class="footer">This is our blog, designed to share our thoughts about the job we love.</footer>
-    <div id="nav">
-      <nav class="nav">
+      </section>
+      <footer  class="footer">This  is  our  blog,  designed  to  share  our  thoughts  about  the  job  we  love.</footer>
+    <div  id="nav">
+      <nav  class="nav">
         <ul>
-          <li><a href="">All</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
-          <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
-          <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
+          <li><a  href="">All</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/development">Development</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/design">Design</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/business">Business</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/sys-admin">Sys  Admin</a></li>
+          <li><a  href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
+          <li><a  href="https://blog.groupbuddies.com/archive">Archive</a></li>
         </ul>
       </nav>
     </div>
-      <script src="./Group Buddies Blog_files/application-c813a37ee3de1150cf384ba0c5cece37.js"></script><script src="./Group Buddies Blog_files/jgi4btu.js"></script><script type="text/javascript">try { Typekit.load(); } catch(e) { }</script><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" style="display: none;"></iframe>
 
   </body>
 
