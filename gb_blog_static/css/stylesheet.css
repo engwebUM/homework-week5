@@ -1,0 +1,180 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: block;
+    color: #333333;
+    font-family: "freight-text-pro", Arial, serif;
+    font-size: 24px;
+}
+
+.header, .post, .quote, .title, .header, .italic_link, .about, .share, .hire {  
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 45rem;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.heart_logo, .gb_logo {
+    display: inline-block;
+    width: 49%;
+}
+
+.heart_logo {
+    text-align: right;
+}
+
+
+#header_nav {
+    background-color: #f6f6f8;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav li+li:before {
+    content: "/";
+    padding: 3px;
+}
+
+.nav a:link, a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+.quote {
+    text-align: center;
+    color: #999999;
+    font-size: 17px;
+    font-style: italic;
+}
+
+section {
+    padding-top: 25px;
+}
+
+.ruby {
+  display: inline-block;
+  position: absolute;
+  margin-left: calc(0px - 60px - 1rem);
+  width: 60px;
+}
+
+.title h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title h1 a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.title h1 a:hover {
+    text-decoration: underline;
+}
+
+
+.italic_link {
+    color: #999999;
+    font-style: italic;
+}
+
+.italic_link a {
+    color: #999999;
+}
+
+.italic_link a:hover {
+    text-decoration: underline;
+}
+
+.post {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 45rem;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.content {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 45rem;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.hire {
+    text-align: center;
+}
+
+.hire a {
+    color: #0091da;
+}
+
+.about {
+    border-top-style: dotted;
+    border-top-width: thin;
+    padding-top: 20px;
+    display: block;
+}
+
+.photo {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+.description {
+    display: inline-block;
+    width: 60%;
+}
+
+.about_h2 {
+    color: #0091da;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.next_page {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+footer {
+    background-color: #f6f6f8;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color: #0091da;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+
