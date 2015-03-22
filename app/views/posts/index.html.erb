@@ -1,0 +1,35 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <% @posts.each do |post| %>
+        <section class="post"> 
+          <div class= "post-header">
+            <div id="title-icon"><img src="<%= post.title_icon %>"/></div>
+            <div id="title"><h1><a href=" "><%= post.title %></h1></div>
+          </div>  
+          <div id="creation-info">
+            <h3> Written by <a href=" "><%= post.author_first_name %></a> on <%= post.date %></h3>
+          </div>
+          <%= post.content.html_safe %>
+        </section>
+        <section class="comment">
+          <aside class="comment-link">
+            <a href="">Comment this post</a>
+          </aside>
+          <div class="hire-us">Want to hire us? <a href="">Get in touch</a></div>
+        </section>
+        <section class="author">
+          <div class="picture">
+            <img src="<%= post.photo_author %>">
+          </div>
+          <div class="author-info">
+            <h1 class="author-name">About <%= post.author_first_name %> <%= post.author_last_name %></h1>
+            <p class="author-bio"><%= post.about_author %></p>
+            <aside class="read-more-author">Read more from <a href=""><%= post.author_first_name %></a> or follow him on <a></a><a href="">Twitter</a>
+            </aside>
+          </div>
+        </section>
+    <% end %>
+  </body>
+</html>

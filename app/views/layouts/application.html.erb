@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ex5 Group Buddies Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'post', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="head">
+	    <header id="header">
+	        <div class="logo">
+	        	<a href="http://groupbuddies.com"><img src="https://blog.groupbuddies.com/assets/logo-15c19284886b7a7c75b7cb69f0ae07e4.png" /></a>
+	      	</div>
+	      	<div class="menu">
+	       		<a href="" ><img src="https://blog.groupbuddies.com/assets/icons/heart-small-f50c3e44fa78b838c057170a94c5ec7c.png" ></a>
+	      	</div>
+	    </header>
+    </div>
+ 	<div id="nav">
+    	<nav class="nav">
+        <ul>
+				   <%= @menu.html_safe %>
+	    	 </ul>
+      </nav>
+ 	</div>
+ 	<section class="message">
+      	 <h3 id="initial-message">Sharing ideas can change the world. It definitely changes us</h3>
+    </section>
+	<%= yield %>
+	<div class="read-more-post">
+      	<a href="">Want to read more? Check all of our posts here</a>
+    </div>
+    <footer class="footer">This is our blog, designed to share our thoughts about the job we love.</footer>
+	<div id="nav">
+      <nav class="nav">
+        <ul>
+			     <%= @menu.html_safe %>
+	      </ul>
+      </nav>
+ 	</div>
+</body>
+</html>
