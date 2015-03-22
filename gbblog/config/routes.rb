@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'posts#index'
+  root to: 'post#index'
 
-  resources :posts
-  resources :authors
-  resources :categories
-  # get 'posts/index'
-  # get 'posts/show'
+  resources :post
+  resources :author
+  resources :category
+  resources :archive
 end

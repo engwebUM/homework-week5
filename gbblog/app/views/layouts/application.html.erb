@@ -7,34 +7,11 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <a href="https://blog.groupbuddies.com">
-          <img src="https://blog.groupbuddies.com/assets/logo-15c19284886b7a7c75b7cb69f0ae07e4.png" alt="Logo" />
-        </a>
-      </div>
-      <div class="heart">
-        <a href="#">
-          <img src="https://blog.groupbuddies.com/assets/icons/heart-small-f50c3e44fa78b838c057170a94c5ec7c.png" alt="Heart" />
-        </a>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
 
-    <nav>
-      <ul>
-        <li><a href="https://blog.groupbuddies.com/">All</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
-        <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
-      </ul>
-    </nav>
+    <%= render 'layouts/navbar' %>
 
-    <section class="motto">
-      <h1>Sharing ideas can change the world. It definitely changes us</h1>
-    </section>
+    <%= render 'layouts/motto' %>
 
     <section class="content">
       <div class="posts">
@@ -42,20 +19,8 @@
       </div>
     </section>
 
-    <footer>
-      This is our blog, designed to share our thoughts about the job we love.
-    </footer>
+    <%= render 'layouts/footer' %>
 
-    <nav>
-      <ul>
-        <li><a href="https://blog.groupbuddies.com/">All</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
-        <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
-        <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
-      </ul>
-    </nav>
+    <%= render 'layouts/navbar' %>
   </body>
 </html>

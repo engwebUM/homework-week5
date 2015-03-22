@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Group Buddies Blog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" href="Group%20Buddies%20Blog_files/archives-64e62ddc273c2f5847f30d698ca14b67.css">
+<link rel="stylesheet" media="screen" href="Group%20Buddies%20Blog_files/posts-64e62ddc273c2f5847f30d698ca14b67.css">
+<link rel="stylesheet" media="screen" href="Group%20Buddies%20Blog_files/application-f27d51b770ca5be00e6a8d6da2f57da9.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="https://groupbuddies.com/"><img alt="Logo" src="Group%20Buddies%20Blog_files/logo-dd384f25124bdd5992fa4c6abec5b827.png"></a>
+      </div>
+      <div class="heart">
+        <a href="#"><img alt="Heart" src="Group%20Buddies%20Blog_files/heart-b9dbcd4bde9bd09a7712117e99dc2907.png"></a>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="https://blog.groupbuddies.com/">All</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
+        <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
+      </ul>
+    </nav>
+
+    <section class="motto">
+      <h1>Sharing ideas can change the world. It definitely changes us</h1>
+    </section>
+
+    <section class="content">
+      <div class="posts">
+        <h1 class="archives">Archives</h1>
+<h2 class="archive-year">2015</h2>
+  <article class="archive-post">
+    <div class="date">Mar 22</div>
+    <div class="archive-body">
+      <h2 class="title">
+        <a href="http://localhost:3000/posts/3-getting-hooked">Getting Hooked</a>
+      </h2>
+      <aside class="info">
+        Written by <a href="http://localhost:3000/authors/miguel-palhas">Miguel</a> on 22, Mar 2015
+      </aside>
+    </div>
+  </article>
+  <article class="archive-post">
+    <div class="date">Mar 22</div>
+    <div class="archive-body">
+      <h2 class="title">
+        <a href="http://localhost:3000/posts/2-game-on-rubyconf-portugal-is-back-in-2015">Game On! RubyConf Portugal is back in 2015</a>
+      </h2>
+      <aside class="info">
+        Written by <a href="http://localhost:3000/authors/roberto-machado">Roberto</a> on 22, Mar 2015
+      </aside>
+    </div>
+  </article>
+
+      </div>
+    </section>
+
+    <footer>
+      This is our blog, designed to share our thoughts about the job we love.
+    </footer>
+
+    <nav>
+      <ul>
+        <li><a href="https://blog.groupbuddies.com/">All</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/development">Development</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/design">Design</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/business">Business</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/sys-admin">Sys Admin</a></li>
+        <li><a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a></li>
+        <li><a href="https://blog.groupbuddies.com/archive">Archive</a></li>
+      </ul>
+    </nav>
+  
+
+</body></html>
