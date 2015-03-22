@@ -7,8 +7,8 @@
 	</head>
 	<body>
 		<div>
-		<header><img id="imglogo" src ="logo.png"><img id="./imgheart" src ="heart.png"></header></div>
-		<iframe src="./navegation.html" marginWidth=0 ></iframe>
+		<header><%= image_tag("logo.png", :id =>"imglogo", :alt => "logo image") %><%= image_tag("heart.png", :id =>"imgheart", :alt => "heart image") %></header></div>
+		<iframe src="navegation.html" marginWidth=0 ></iframe>
 		<section>
 			<h1 id="intro">Sharing ideas can change the world. It definitely changes us</h1>
 		</section>
@@ -16,7 +16,7 @@
 		<section>
 			<header id="headSection">
 				<div id="headerDiv">
-					<div id="logoruby"><img src="ruby.png"> </div>
+					<div id="logoruby"><%= image_tag("ruby.png",  :alt => "ruby image") %> </div>
 					<div id="section"><h1><a href="">Accessibility Matters</a></h1></div>
 					<div id="subtitle">Written by <a href="">Luis</a> on 02, Feb 2015</div>
 				</div>
@@ -93,7 +93,7 @@
 			</div>
 			<br/>
 			<div id="information">
-				<div id="photo"><img src="photo.png"></div>
+				<div id="photo"><%= image_tag("photo.png",  :alt => "photo image") %></div>
 				<div id="author">
 					<h2>About Luis Zamith</h2>
 					<p>Founder and Developer at Group Buddies where he tries to improve the web one website at a time. Loves the tech world, especially applicational design, but can be seen, on occasion, working on user experience problems or even system administration. His motto is “Start small or not at all”.</p>	<br/><br/>
@@ -103,13 +103,13 @@
 		</section>
 		</article>
 
-		<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<article>
 			<section>
 				<div id="text1">
 			<header id="headSection" class="article2">
 				<div id="headerDiv" >
-					<div id="logoruby"><img src="design.png"> </div>
+					<div id="logoruby"><%= image_tag("design.png",  :alt => "design image") %></div>
 					<div id="section"><h1><a href="">For Makers</a></h1></div>
 					<div id="subtitle">Written by <a href="">João</a> on 10, Dec 2014</div>
 				</div>
@@ -159,7 +159,7 @@
 		</div>
 			<br/>
 			<div id="information">
-				<div id="photo"><img src="photo2.png"></div>
+				<div id="photo"><%= image_tag("photo2.png",  :alt => "photo2 image") %></div>
 				<div id="author">
 					<h2>About João Ferreira</h2>
 					<p>Believes that Design is not about mastering a tool, but about mastering people.Knows some of Godfather's quotes by heart.</p>	<br/><br/>
@@ -170,7 +170,7 @@
 		</article>
 		
 
-		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 		<section><div id="read_more_posts">
 		<a  href="">Want to read more? Check all of our posts here</a></div>
 		</section>

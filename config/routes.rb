@@ -9,7 +9,7 @@ HomeworkWeek5::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 get 'navegation' => 'welcome#navegation'
-get 'index' => 'welcome#index'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
