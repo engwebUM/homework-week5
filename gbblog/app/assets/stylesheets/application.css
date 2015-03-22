@@ -1,0 +1,298 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code, pre, em, blockquote, h3 {
+   border: 0px none;
+   font: inherit;
+   margin: 0px;
+   padding: 0px;
+   vertical-align: baseline;
+ }
+
+ html, body { /** talvez incluir isto na parte acima? **/
+   color: #333;
+   /*font-family: Helvetica,Arial,serif;*/
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-size: 24px;
+ }
+
+ body {
+   line-height: 1;
+ }
+
+ header {
+   margin-top: 15px;
+   margin-bottom: 0.5rem;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 30rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+ }
+
+ header, nav, section, footer, article, aside {
+   display: block;
+ }
+
+ header .logo, header .heart {
+   display: inline-block;
+   width: 49%;
+ }
+
+ header .heart {
+   text-align: right;
+ }
+
+ header .logo img, header .heart img {
+   vertical-align: middle;
+ }
+
+ a {
+   color: #333;
+   text-decoration: underline;
+ }
+
+ nav {
+   background-color: #F6F6F8;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 30px 0px;
+   text-align: center;
+ }
+
+ nav li {
+   display: inline;
+ }
+
+ nav li + li:before { /* separators are pseudo-elements */
+   color: #999;
+   content: "/";
+   padding: 0px 5px;
+ }
+
+ nav a {
+   color: #666;
+   text-decoration: none;
+ }
+
+ .motto h1 {
+   color: #999;
+   font-size: 20px;
+   font-style: italic;
+   font-weight: normal;
+   margin-top: 1rem;
+   text-align: center;
+ }
+
+ .posts {
+   margin: 5em auto 8em;
+   max-width: 30rem;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+ }
+
+ .read-more, .read-more a {
+   color: #0091DA;
+   text-align: center;
+ }
+
+ footer {
+   background-color: #0091DA;
+   color: #FFF;
+   font-size: 18px;
+   margin-bottom: 0px;
+   padding: 30px 0px;
+   text-align: center;
+ }
+
+ .posts .category-icon {
+   display: inline-block;
+   margin-left: calc(0px - 60px - 1rem);
+   position: absolute;
+   width: 60px;
+ }
+
+ .posts .post-header {
+   padding-left: 0px;
+   padding-right: 0px;
+ }
+
+ .posts h1 {
+   font-size: 50px;
+   font-weight: bold;
+ }
+
+ .posts h1 a {
+   color: #333;
+   text-decoration: none;
+ }
+
+ .posts .post-info {
+   color: #999;
+   margin-top: 0.5rem;
+   font-style: italic;
+ }
+
+ .posts .post-info a {
+   color: #999
+ }
+
+ .posts .post-body {
+   line-height: 38px;
+   margin-bottom: 3rem;
+   margin-top: 2rem;
+ }
+
+ .posts .post-body p {
+   margin-bottom: 25px;
+ }
+
+ .posts .post-body h1 {
+   font-size: 40px;
+   font-weight: bold;
+   padding-top: 45px;
+   padding-bottom: 30px;
+ }
+
+ .posts .post-comment {
+   display: inline-block;
+ }
+
+ .posts .post-share {
+   display: inline-block;
+   float: right;
+ }
+
+ .posts .hire {
+   margin: 2rem 0px;
+   text-align: center;
+ }
+
+ .posts .hire a {
+   color: #0091DA;
+ }
+
+ .posts .author {
+   border-top: 1px dotted #999;
+   padding-top: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 5rem;
+ }
+
+ .posts .author > * {
+   display: inline-block;
+   vertical-align: top;
+ }
+
+ .posts .author-photo {
+   width: 90px;
+   margin-right: 1rem;
+ }
+
+ .posts .author-info {
+   width: 70%;
+ }
+
+ .posts .author h2 {
+   color: #0091DA;
+   font-size: 30px;
+   font-weight: bold;
+ }
+
+ .posts .author-bio {
+   margin: 1rem 0px;
+   line-height: 38px;
+ }
+
+ .posts .author .post-info {
+   font-size: 18px;
+ }
+
+ .posts em {
+   font-style: italic;
+ }
+
+ .posts code {
+   background-color: #F6F6F8;
+   border: 1px solid #DDD;
+   border-radius: 3px;
+   display: inline-block;
+   font-family: Menlo,"Source Code Pro",Monaco,"Andale Mono","lucida console","Courier New",monospace;
+   font-size: 16.8px;
+   line-height: 1.5;
+   vertical-align: middle;
+   white-space: nowrap;
+ }
+
+ .posts code:before, .posts code:after {
+   content: " ";
+   letter-spacing: -0.2em;
+ }
+
+ .posts .highlight {
+   margin-bottom: 20px;
+   overflow-y: hidden;
+ }
+
+ .post-body pre {
+   display: block;
+   font-size: 16.8px;
+   overflow: auto;
+   padding: 10px;
+   font-family: Menlo,"Source Code Pro",Monaco,"Andale Mono","lucida console","Courier New",monospace;
+   background-color: #F6F6F8;
+   line-height: 20px;
+ }
+
+ .posts blockquote:before, .posts blockquote:after {
+   content: none;
+ }
+
+ .posts blockquote {
+   font-style: italic;
+   border-left: 5px solid #0091DA;
+   padding-left: 20px;
+   margin-left: -20px;
+   color: #333;
+   quotes:none;
+ }
+
+ .posts h2 {
+   font-size: 32px;
+   padding-top: 25px;
+   padding-bottom: 15px;
+   font-weight: bold;
+ }
+
+ .posts h3 {
+   font-size: 25px;
+   padding-bottom: 15px;
+   font-wight: bold;
+ }
+
+ .posts ul {
+   list-style-position: inside;
+   margin-bottom: 20px;
+ }
+
+ .posts ul li {
+   list-style-type: disc;
+   margin-bottom: 1rem;
+ }
+
+ .posts img {
+   max-width: 100%;
+ }
