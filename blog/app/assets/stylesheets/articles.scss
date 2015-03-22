@@ -1,0 +1,247 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*body{
+	color: #303030;
+	font-family: Arial,sans-serif;
+	font-size: 24px;
+	line-height: 1;
+}*/
+
+.header{
+	max-width: 710px;
+	margin-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 18px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.header .logo{
+	display: inline-block;
+	width: 48%;
+}
+
+.header .heart{
+	text-align: right;
+	display: inline-block;
+	width: 48%;
+}
+
+.tabs{
+	text-align: center;
+	background-color: #f6f6f8;
+	vertical-align: baseline;	
+
+}
+
+.list{
+	text-align: center;
+	padding: 2px 0;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+.list ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+.list li a{
+  font-size: 13px;
+  color: #848484;
+  text-decoration: none;
+
+}
+
+.list li+li:before{
+	content:"/";
+	font-size: 13px;
+	color: #848484;
+}
+
+.list li a:hover{
+	text-decoration: underline;
+	color: #0000ff;
+}
+
+.ideas_quote{
+	text-align: center;
+	color: #999999;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+
+.content{
+	max-width: 710px;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 18px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+article, aside, header, footer{
+	display: block;
+}
+
+
+.icon{
+	width: 48%;
+}
+.content .icon {
+	display: inline-block;
+	position: absolute;
+	margin-left: -80;
+}
+
+article{
+	margin-top: 100px;
+}
+
+.article-title{
+	font-size: 40px;
+	font-family: Arial, sans-serif;
+	
+}
+.article-title a{
+	text-decoration:none;
+	color: #333333;
+}
+
+.article-title a:hover{
+	text-decoration: underline;
+	color: #333333;
+}
+
+.written{
+	margin-top: 10px;
+	color: #999999;
+	font-style: italic;
+	font-size: 20px;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.written a{
+	color: #999999;
+}
+
+.article-body{
+	margin-bottom: 80px;
+	margin-top: 40px;
+	line-height: 40px;
+}
+
+.tweet, .comment{
+	display: inline-block;
+	margin-bottom: 40px;
+	font-size: 20px;
+	color: #999999;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.comment a{
+	color: #999999;
+	font-style: italic;
+}
+
+.tweet{
+	float: right;
+}
+
+.hire{
+	text-align: center;
+	margin: 10px 0;
+	color: #333333;
+}
+
+.hire a{
+	color: #0091da;
+}
+
+.author{
+	border-top-style: dotted;
+	border-width: 1px;
+	border-top-color: #999999;
+	padding-top: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.author img, .author-info{
+	display: inline-block;
+}
+
+.author img{
+	margin-top: 2px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.author-info h2{
+	display: block;
+	font-size: 30px;
+	color: #0091da;
+}
+.author-info{
+	width: 80%;
+	margin-left: 5px;
+}
+
+.description{
+	margin-left: 5px;
+	line-height: 40px; 
+}
+
+.author-read{
+	color: #999999;
+	font-style: italic;
+	font-size: 18px;
+	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+.author-read a{
+	color: #999999;
+	font-style: italic;
+	font-size: 18px;
+}
+
+.all-articles{
+	text-align: center;
+	margin-top: 110px;
+	margin-bottom: 110px;
+}
+
+.all-articles a{
+	color: #0091da;
+}
+
+h1{
+	font-size: 50px;
+}
+
+
+h1, h2{
+	font-weight: bold;
+}
+
+p{
+	display: block;
+}
+
+
+.footer{
+	text-align: center;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #0091da;
+	font-style: none;
+	font-family: serif;
+	padding: 30px 0;
+	margin-bottom: 0;
+}
