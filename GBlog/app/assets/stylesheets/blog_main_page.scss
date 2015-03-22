@@ -103,11 +103,12 @@ main .postBody{
 	font-family: 'PT Sans Caption', sans-serif;
 }
 
-.postDetails{
+.postDetails, .postDetails a,.postDetails a:hover,.postDetails a:link,.postDetails a:visited{
 	padding-top: 15px;
 	font-size: 18px;
 	color: #9c9b9b;
 	font-family: 'Josefin Slab', serif;
+	background: none
 }
 
 .commentOnPost a,.commentOnPost a:active,.commentOnPost a:link,.commentOnPost a:visited,.commentOnPost a:hover{
