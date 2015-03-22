@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @homework5db.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @homework5db.text %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @homework5db.author %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @homework5db.date %>
+</p>
+
+<%= link_to 'Edit', edit_homework5db_path(@homework5db) %> |
+<%= link_to 'Back', homework5dbs_path %>
