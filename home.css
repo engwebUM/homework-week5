@@ -1,4 +1,4 @@
-html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code, pre, em {
+html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code, pre, em, blockquote, h3 {
   border: 0px none;
   font: inherit;
   margin: 0px;
@@ -239,4 +239,37 @@ footer {
   font-family: Menlo,"Source Code Pro",Monaco,"Andale Mono","lucida console","Courier New",monospace;
   background-color: #F6F6F8;
   line-height: 20px;
+}
+
+.posts blockquote:before, .posts blockquote:after {
+  content: none;
+}
+
+.posts blockquote {
+  font-style: italic;
+  border-left: 5px solid #0091DA;
+  padding-left: 20px;
+  margin-left: -20px;
+  color: #333;
+  quotes:none;
+}
+
+.posts h3 {
+  font-size: 25px;
+  padding-bottom: 15px;
+  font-wight: bold;
+}
+
+.posts ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+.posts ul li {
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.posts img {
+  max-width: 100%;
 }
