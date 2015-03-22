@@ -1,0 +1,33 @@
+<%= form_for(@homework5db) do |f| %>
+  <% if @homework5db.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@homework5db.errors.count, "error") %> prohibited this homework5db from being saved:</h2>
+
+      <ul>
+      <% @homework5db.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

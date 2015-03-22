@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'blog/index'
+  resources :homework5dbs
 
-  get 'welcome/index'
+  #get 'welcome/index'
+
 
   match ':controller(/:action((:id)))', :via => :get
   # The priority is based upon order of creation: first created -> highest priority.
