@@ -1,4 +1,4 @@
-html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside {
+html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code {
   border: 0px none;
   font: inherit;
   margin: 0px;
@@ -109,6 +109,11 @@ footer {
   width: 60px;
 }
 
+.posts .post-header {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .posts h1 {
   font-size: 50px;
   font-weight: bold;
@@ -198,4 +203,21 @@ footer {
 
 .posts .author .post-info {
   font-size: 18px;
+}
+
+.posts code {
+  background-color: #F6F6F8;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: Menlo,"Source Code Pro",Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  font-size: 16.8px;
+  line-height: 1.5;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.posts .highlight {
+  margin-bottom: 20px;
+  overflow-y: hidden;
 }
