@@ -2,12 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*body{
+body{
 	color: #303030;
 	font-family: Arial,sans-serif;
 	font-size: 24px;
 	line-height: 1;
-}*/
+}
 
 .header{
 	max-width: 710px;
@@ -91,14 +91,15 @@ article, aside, header, footer{
 	display: block;
 }
 
-
-.icon{
-	width: 48%;
-}
 .content .icon {
 	display: inline-block;
 	position: absolute;
 	margin-left: -80;
+}
+
+.icon{
+	width: 48%;
+	margin-left:calc(0px - 70px - 1rem)
 }
 
 article{
@@ -106,13 +107,15 @@ article{
 }
 
 .article-title{
-	font-size: 40px;
-	font-family: Arial, sans-serif;
+	font-size: 45px;
+	font-family: Arial,sans-serif;
+	line-height: 120%;
+	color: #000000;
 	
 }
 .article-title a{
 	text-decoration:none;
-	color: #333333;
+	color: #000000;
 }
 
 .article-title a:hover{
@@ -124,7 +127,7 @@ article{
 	margin-top: 10px;
 	color: #999999;
 	font-style: italic;
-	font-size: 20px;
+	font-size: 25px;
 	font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
 }
 
@@ -190,11 +193,11 @@ article{
 }
 .author-info{
 	width: 80%;
-	margin-left: 5px;
+	margin-left: 23px;
 }
 
 .description{
-	margin-left: 5px;
+	margin-left: 23px;
 	line-height: 40px; 
 }
 
