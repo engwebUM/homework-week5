@@ -1,4 +1,4 @@
-html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code {
+html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code, pre, em {
   border: 0px none;
   font: inherit;
   margin: 0px;
@@ -203,6 +203,10 @@ footer {
 
 .posts .author .post-info {
   font-size: 18px;
+}
+
+.posts em {
+  font-style: italic;
 }
 
 .posts code {
