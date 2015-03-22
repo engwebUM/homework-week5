@@ -30,9 +30,39 @@
       <h1 class="quote">Sharing ideas can change the world. It definitely changes us</h1>
     </section>
 
-
     <section class="content">
       <div class="default-page">
+
+
+          <% @homework5dbs.each do |homework5db| %>
+            <article class="post">
+              <div class="post-icon"><a href=""><%= image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png") %></a></div>
+              <header class="post-header">
+                <h1 class="huge"><a href=""><%= homework5db.title %></a></h1>
+                <aside class="info">Written by <a href="#"><%= homework5db.author %></a> <%= homework5db.date %></aside>
+              </header>
+
+              <div class="post-body" data-twttr-id="twttr-sandbox-0">
+                <p><%= homework5db.text %>
+              </div>
+
+              <aside class="info comment"><a href=" ">Comment this post</a></aside>
+              <div class="hire-us">Want to hire us? <a href="https://groupbuddies.typeform.com/to/tgcrRI" target="blank">Get in touch</a></div>
+
+              <%= image_tag("p.png") %>
+              <section class="author2">
+                <div class="photo2"><%= image_tag("icon-db-circle.png") %></div>
+                <div class="author-info2">
+                  <h2 class="author-title2">About <%= homework5db.author %> </h2>
+                  <p class="author-bio2">DataBase bio. </p>
+                  <aside class="info small">Read more from <a></a><a href="https://blog.groupbuddies.com/author/Roberto-Machado">DataBase</a> or follow him on <a></a><a href="">Twitter</a></aside>
+                </div>
+              </section>   
+            </article>
+           <% end %>
+        
+
+
         <article class="post">
             <div class="post-icon"><a href=""><%= image_tag("development-16fb1995786ab87fe8f3a675ad944f9e.png") %></a></div>
             <header class="post-header">
@@ -70,6 +100,9 @@
               </div>
             </section>   
         </article>
+
+
+
       </div>
     </section>
      </section>
@@ -92,21 +125,3 @@
   </body>
 
 </html>
-
-
-
-
-
-
-<!---
-
-  <tbody>
-    <% @homework5dbs.each do |homework5db| %>
-      <tr>
-        <td><%= homework5db.title %></td>
-        <td><%= homework5db.text %></td>
-        <td><%= homework5db.author %></td>
-        <td><%= homework5db.date %></td>
-      </tr>
-    <% end %>
-  </tbody>

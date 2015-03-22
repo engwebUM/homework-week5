@@ -300,6 +300,15 @@ section{
 	color:#0091da;
 	text-decoration:none
 }
+
+.author-title2 {
+	font-family: "Times New Roman";
+	font-size:30px;
+	display:inline-block;
+	color:#0091da;
+	text-decoration:none
+}
+
 .author .photo {
 	display:inline-block;
 	position:absolute;
@@ -308,7 +317,7 @@ section{
 
 .author .author-info {
 	margin-left:20%;
-	width:65%
+	width:70%
 }
 .author .author-bio {
 	font-family: "Times New Roman";
@@ -316,6 +325,27 @@ section{
 	margin:1rem 0;
 	line-height:38px
 }
+
+.author2 .author-info2 {
+	margin-left:20%;
+	width:70%
+}
+
+.author2 .photo2 {
+	display:inline-block;
+	position:absolute;
+	margin-left:calc(0px - 10px - 0rem)
+}
+.author2 .author-bio2 {
+	font-family: "Times New Roman";
+	font-size:22px;
+	margin:1rem 0;
+	line-height:38px
+}
+
+.author2 a:hover{
+	font-size:18px
+};
 
 .author a:hover{
 	font-size:18px
