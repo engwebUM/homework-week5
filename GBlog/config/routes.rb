@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :post_types
+
+  resources :posts
+
+  resources :authors
+
+  get 'blog_main_page/index'
+  root 'blog_main_page#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

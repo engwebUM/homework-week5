@@ -1,0 +1,2 @@
+module BlogMainPageHelper
+end

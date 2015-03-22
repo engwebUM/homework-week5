@@ -1,0 +1,124 @@
+// Place all the styles related to the blogMainPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*Filo*/
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+/*Title*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
+/*Details*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:400italic);
+/*Body*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+
+*{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+header{
+	height:50px;
+	width: 50%;
+	margin: 25px auto auto;
+}
+
+header .logo{	
+	display: inline-block;
+}
+
+header .linkSite{
+	display: inline-block;
+	float: right;
+}
+
+nav{
+	background: grey;
+	height:100px;
+	opacity: 0.2;
+	width: 100%;
+}
+
+aside .phrase{
+	color: grey;
+	font-family: 'Courgette', cursive;
+	padding:10px;
+	text-align: center;
+}
+
+main{
+	width: 70%;
+	height: auto;
+	margin: 25px auto auto;
+}
+
+main .postIcon{
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+	width: 10%;
+}
+
+main .postBody{
+	display: inline-block;
+	width: 80%;
+}
+
+.postTitle{
+	color: #2d2d2d;
+	font-size: 50px;
+	line-height: 50px;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+.postDetails{
+	color: #9c9b9b;
+	font-family: 'Josefin Slab', serif;
+}
+
+.postText{
+	color: #2d2d2d;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 25px;
+	text-align: justify;
+	line-height: 40px;
+    text-justify: inter-word;
+}
+
+
+
+
+.postAuthor{
+
+}
+
+.authorPhoto{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px;
+	vertical-align: top;
+	width: 10%;
+}
+
+.authorTitle{
+	color: #3399ff;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-size: 30px;
+}
+
+.authorDetails{
+	display: inline-block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 25px;
+	margin:20px;
+	text-align: justify;
+    text-justify: kashida;
+	width: 60%
+}
+
+
+
+article{
+	margin-top: 30px;
+
+}
