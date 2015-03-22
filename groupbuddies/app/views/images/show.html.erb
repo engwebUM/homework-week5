@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @image.nome %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= image_tag(@image.file, :width => 600) if @image.file.present? %>
+</p>
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

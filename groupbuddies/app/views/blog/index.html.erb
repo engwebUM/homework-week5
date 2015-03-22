@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css.css">
+
+		<title> Group Buddies </title>
+		<h2 class="header_images">
+ 				<img id="logotipo"> <%= image_tag("logotipo.png")%></img>
+ 				<img id="symbol"> <%= image_tag("imagem.png")%></img>
+		</h2>
+
+
+	
+	</head>
+	
+	<body>
+		<div class="topButtons">
+			
+			<ul>
+				
+				<li>
+					<a href="/">All</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/development">Development</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/design">Design</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/design">Design</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/sys_admin">Sys Admin</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/archive">Archive</a>
+				</li>
+			</ul>
+		</div>
+
+		<section class="slogan">
+			<h1>Sharing ideas can change the world. It definitely changes us</h1>
+		</section>	
+
+		<article class="article">
+			<div class="icon-post">
+				<a href="https://blog.groupbuddies.com/archive">
+					<img > <%= image_tag("icon-post.png")%></img>
+				</a>	
+			</div>
+		
+			<header class="header-post">
+				<h1 class="title-post">
+					<a href="">Game On! RubyConf Portugal is back in 2015</a>
+				</h1>
+
+				<h3 class="author-post">
+					Written by
+					<a href=/"https://blog.groupbuddies.com/author/Roberto-Machado">Roberto</a>
+					on 27, Fev 2015
+				<h3>
+			</header>
+
+			<div class="body-post">
+				<p>We're ready to announce that the 2nd edition of 
+					<a href="http://rubyconf.pt/">RubyConf Portugal</a>
+					is coming and it's going to be bigger, bolder and awesome-er!	
+				</p>
+
+				<p>A long time passed since the day that we decided to create the
+					<a href="https://blog.groupbuddies.com/posts/31-brace-yourselves-rubyconf-portugal-is-coming">very first</a>
+					RubyConf Portugal. Since then we worked tirelessly to make sure that, with the first edition, we'd build the foundations for a consistent yearly conference about Ruby in Portugal. By the reactions from speakers and attendees, it seems we've hit a home run:
+				</p>
+				
+				<a class="comments">
+					<img id="comment1"><%= image_tag("comment1.png")%></img>
+				</a>
+
+				<p>
+					Again this year, this is an event envisioned by 
+					<a href="https://groupbuddies.com/">Group Buddies</a>
+					, although everyone is invited to help us put it together. We want to join forces and unite the community, in order to create the best event we possibly can.
+				</p>
+
+                <h1>Where?</h1>
+
+                <p>
+                	The conference will again take place in the beautiful city of Braga, Portugal's third biggest city, with an amazing history and a fantastic University. It was the European Youth Capital in 2012 and it is 30 mins away from Porto, the 
+                	<a href="https://www.europeanbestdestinations.org/top/europe-best-destinations-2014">coolest city of Europe</a>
+                	. You probably already heard of it, at least about the Port Wine and the 
+                	<a href="https://www.ana.pt/en-US/Topo/institucional/aboutANA/News/News/Pages/Porto-Airport-once-again-voted-3rd-best-in-Europe.aspx">OPO airport</a> 
+                	(which, by the way, was also considered one of the best in Europe).
+                </p>
+                <p>
+                	Braga can be described as an ancient, historic city, filled with young people, determined to make a difference. We have great tech companies here, with major international relevance, as well as young companies and startups.
+                </p>
+                <h1>When?</h1>
+                <p>This year it will happen on September 13 to 15.</p>
+                <h1>CFP, Tickets, and more...</h1>
+                <p>We will soon be launching the Call For Proposals and we will start selling tickets next month. Sponsors and partners are welcome, so we'd love if you could help us spread the word. We will have a team of voluntaries which you can apply for, by emailing us at 
+                	<a href="mailto:rubyconfpt@groupbuddies.com">rubyconfpt@groupbuddies.com</a>.</p>
+                <p>We are aware of the challenge that it represents to top last year's edition. Creating such an ambitious conference is far from being an easy task, but we're confident that the portuguese ruby community will again embrace this event as a way to unite itself and put Portugal on the map, not only amongst ruby conferences, but also amongst the OSS community in general.</p>
+                <p>We hope to see you all this fall in Braga.</p>		
+			</div>
+
+			<aside class="info comment"><a href=" ">Comment this post</a></aside>
+            <div class="hire-us">Want to hire us? <a href="https://groupbuddies.typeform.com/to/tgcrRI" target="blank">Get in touch</a></div>
+
+            <%= image_tag("trace.png") %>
+            <section class="author">
+              <div class="photo"><%= image_tag("roberto_picture.png") %></div>
+              <div class="author-info">
+                <h2 class="author-title">About Roberto Machado</h2>
+                <p class="author-bio">Founded Group Buddies in 2011. Lean Startup Minho founder. Minho.rb founder. </p>
+                <aside class="info small">Read more from <a></a><a href="https://blog.groupbuddies.com/author/Roberto-Machado">Roberto</a> or follow him on <a></a><a href="https://twitter.com/rmdgb">Twitter</a></aside>
+              </div>
+            </section>
+            <p></p>
+
+
+            <h1 class="extra">FROM DATABASE</h1>
+
+            <%@articles.each do |article|%>
+	            <div class="icon-postDB">
+					<a href="https://blog.groupbuddies.com/archive">
+						<img id="icon2"> <%= image_tag("icon2.png")%></img>
+					</a>	
+				</div>
+			
+				<header class="header-post">
+					<h1 class="title-postDB">
+						<a href=""><%=article.title%></a>
+					</h1>
+
+					<h3 class="author-post">
+						Written by
+						<a href=/"https://blog.groupbuddies.com/author/Roberto-Machado"><%=article.author%></a>
+						on <%=article.date%>
+					<h3>
+				</header>
+
+				<div class="bodyDB">
+					<%=article.body%>		
+				</div>
+			<%end%>	
+		</article>
+
+
+
+		<footer class="footer">This is our blog, designed to share our thoughts about the job we love.</footer>
+
+
+		<div class="topButtons">
+			
+			<ul>
+				
+				<li>
+					<a href="/">All</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/development">Development</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/design">Design</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/design">Design</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/sys_admin">Sys Admin</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/category/miscellanea">Miscellanea</a>
+				</li>
+				<li>
+					<a href="https://blog.groupbuddies.com/archive">Archive</a>
+				</li>
+			</ul>
+		</div>
+
+
+		
+	</body>	
+</html>
