@@ -1,4 +1,4 @@
-  html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, footer, article, aside, code, pre, em, blockquote, h3 {
+  html, header, body, div, a, img, nav, section, p, ul, li, h1, h2, h3, footer, article, aside, code, pre, em, blockquote, iframe {
     border: 0 none;
     font: inherit;
     margin: 0;
@@ -164,6 +164,10 @@
   .posts .post-share {
     display: inline-block;
     float: right;
+  }
+
+  .posts .twitter-share-button {
+    vertical-align: bottom;
   }
 
   .posts .hire {

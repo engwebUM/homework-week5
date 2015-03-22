@@ -18,7 +18,8 @@
       <%= link_to 'Comment this post', post_path(post) << '#disqus_t' %>
     </aside>
     <div class="post-share">
-      [Tweet]
+      <a class="twitter-share-button" data-text="<%= post.title %>" data-url="<%= 'http://blog.groupbuddies.com' << post_path(post) %>" data-via="groupbuddies" href="https://twitter.com/share">Tweet</a>
+      <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
     <div class="hire">
       Want to hire us? <a target="blank" href="https://groupbuddies.typeform.com/to/tgcrRI">Get in touch</a>
