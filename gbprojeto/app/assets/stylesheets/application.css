@@ -1,0 +1,137 @@
+.header, .post{
+max-width: 800px;
+margin: 20px auto;
+padding: 0 15px;
+}
+.header .heart {
+text-align: right;
+}
+.header .gblogo, .header .heart {
+display: inline-block;
+width: 49%;
+} 
+.saying {
+text-align: center;
+color: #999;
+font-family: "freight-text-pro",Arial,serif;
+font-size: 15px;
+font-style: italic;
+margin-top: 1rem;
+}
+.read-more{
+margin: 100px 0;
+}
+.read-more a{
+color: #0091da;
+}
+.read-more{
+text-align: center;
+color: #999;
+font-size: 16px;
+margin: 50px 0;
+}
+.footer{
+text-align: center;
+font-size: 14px;
+background-color: #0091DA;
+padding: 30px 0;
+color: #fff;
+margin-top: 80px;
+}
+.nav{
+text-align: center;
+background-color: #f6f6f8;
+padding: 30px 0;
+font-size: 12px;
+}
+.nav li{
+display: inline;
+}
+.nav li+li:before{
+padding-right: 5px;
+content: "/";
+color: #666;
+}
+.nav li a{
+color: #666;
+text-decoration: none;
+}
+.nav li a:hover{
+text-decoration: underline;
+}
+.post{
+margin-top: 100px;
+position: relative;
+}
+.post .post-icon{
+position:absolute;
+left: -65px;
+}
+.post .post-title{
+font-size: 50px;
+}
+.post .post-title a{
+line-height: 65px;
+color: #333;
+text-decoration: none;
+}
+.post .post-title a:hover{
+text-decoration: underline;
+}
+.post .written-by{
+color:#999;
+font-size: 20px;
+font-style: italic;
+margin: 15px 0;
+text-decoration: underline;
+}
+.post .post-body{
+margin-top: 45px;
+line-height: 38px;
+}
+.post .post-body p{
+margin-bottom: 30px;
+}
+.info{
+color: #999999;
+font-style: italic;
+}
+.info a{
+color: #999999;
+}
+.author{
+border-top: dotted 1px #000;
+padding-top: 30px;
+}
+.author .photo{
+vertical-align: top;
+width: 90px;
+margin-right: 30px;
+}
+.author .photo img{
+border-radius: 50%;
+width: 100%;
+}
+.author .photo, .author .author-info{
+display: inline-block;
+}
+.author .author-info{
+font: inherit;
+line-height: 15px;
+width: 60%;
+}
+.author .author-title{
+font-size: 26px;
+margin-bottom: 30px;
+color: #0091da;
+}
+.author .info_more{
+color: #999999;
+font-style: italic;
+}
+.touch{
+text-align: center;
+}
+.touch a{
+color: #0091da;
+}
