@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+html{
+  font-size: 24px;
+  line-height: 1;
+}
+
+a{
+  text-decoration: underline;
+}
+
+h1,h2{
+  font-weight: bold;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+header{
+  max-width: 30rem;
+  margin-top: 15px;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .logo, header .heart{
+  display: inline-block;
+  width: 50%;
+}
+
+header .heart{
+  text-align: right;
+}
+
+nav{
+  text-align: center;
+  background-color: #f6f6f8;
+  padding: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav li{
+  display: inline;
+}
+
+nav li+li:before{
+  content: "/";
+  padding: 5px;
+}
+
+nav a{
+  color: #666666;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #0792D7;
+  text-decoration: underline;
+}
+
+.tit{
+  text-align: center;
+  color: #999999;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.content{
+  max-width: 30rem;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 8em;
+}
+
+.content .post-header .info{
+  margin-top: 0.5rem;
+
+}
+.content .post-body{
+  margin-bottom: 3rem;
+}
+
+.content .author{
+  border-top: dotted 1px #999999;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.content .touch{
+  margin: 2rem;
+}
+
+.post-icon{
+  width: 60px;
+}
+
+article .post-icon{
+  display: inline-block;
+  position: absolute;
+  margin-left: -85px;
+}
+
+article .title{
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.post-body{
+  margin-top: 2rem;
+  line-height: 38px;
+}
+
+.post-body p{
+  margin-bottom: 25px;
+}
+
+.touch{
+  text-align: center;
+  color: #333333;
+}
+
+.post-tit a{
+  color: #333333;
+  text-decoration: none;
+}
+
+.post-tit a:hover,.author-title a:hover{
+  text-decoration: underline;
+}
+
+.info{
+  color: #999999;
+  font-style: italic;
+}
+
+.info a{
+  color: #999999;
+}
+
+.author .author-info{
+  width: 70%;
+}
+
+.touch a{
+  color: #0091da;
+}
+
+.author .photo{
+  width: 90px;
+  margin-right: 1rem;
+}
+
+.author .author-bio{
+  margin: 1rem 0;
+  line-height: 38px;
+}
+
+.author-title{
+  color: #0091da;
+}
+
+.author .author-title, .author .author-bio, .author .photo, .author .author-info{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.more{
+  font-size: 18px;
+}
+
+.read{
+  text-align: center;
+}
+
+.read a{
+  color: #0091da;
+}
+
+footer{
+  background-color: #f6f6f8;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: #0091da;
+  padding: 30px;
+}

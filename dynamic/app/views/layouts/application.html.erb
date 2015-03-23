@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Group Buddies Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <div class='logo'>
+      <a href='#'><img src='assets/logo.png' /></a>
+    </div><div class='heart'>
+      <a href="#"><img src='assets/heart.png' /></a>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href='#'>All</a></li>
+      <li><a href='#'>Development</a></li>
+      <li><a href='#'>Design</a></li>
+      <li><a href='#'>Business</a></li>
+      <li><a href='#'>Sys Admin</a></li>
+      <li><a href='#'>Miscellanea</a></li>
+      <li><a href='#'>Archive</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1 class='tit'>Sharing ideas can change the world. It definitely changes us</h1>
+  </section>
+  <section class='content'>
+<%= yield %>
+<div class='read'>
+  <a href="#">Want to read more? Check all of our posts here</a>
+</div>
+</section>
+<footer>This is our blog, designed to share our thoughts about the job we love.</footer>
+
+<nav>
+  <ul>
+    <li><a href='#'>All</a></li>
+    <li><a href='#'>Development</a></li>
+    <li><a href='#'>Design</a></li>
+    <li><a href='#'>Business</a></li>
+    <li><a href='#'>Sys Admin</a></li>
+    <li><a href='#'>Miscellanea</a></li>
+    <li><a href='#'>Archive</a></li>
+  </ul>
+</nav>
+</body>
+</html>

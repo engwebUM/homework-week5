@@ -1,0 +1,44 @@
+
+    <% @articles.each do |article| %>
+
+
+      <article>
+        <div class='post-icon'>
+          <img src='assets/<%= article.icon.image %>' />
+        </div>
+
+        <header class='post-header'>
+          <h1 class='post-tit'><a href='#'><%= article.title %></a></h1>
+          <aside class='info'>
+            Write by <a href='#'><%= article.author.first_name %></a> <%= article.date.strftime("on %d, %b %Y ") %>
+          </aside>
+        </header>
+
+        <div class='post-body'>
+          <%= simple_format(article.post) %>
+        </div>
+
+        <div class='info'>
+          <a href='#'>Comment this post</a>
+        </div>
+
+        <div class='touch'>
+          <p>Want to hire us? <a href='#'>Get in touch</a></p>
+        </div>
+
+        <div class='author'>
+          <div class='photo'>
+            <img src='assets/author/<%= article.author.photo %>' />
+          </div>
+
+          <div class='author-info'>
+            <h2 class='author-title'>About <%= article.author.first_name %> <%= article.author.last_name %></h2>
+            <p class='author-bio'><%= article.author.about %></p>
+            <div class='info more'>
+              Read more from <a href="#"><%= article.author.first_name %></a> or follow him on <a href="#">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    <% end %>
