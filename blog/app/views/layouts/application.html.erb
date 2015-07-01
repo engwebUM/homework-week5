@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Blog</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
+	<nav>
+		<ul>
+			<li>All</li>
+			<li>Development</li>
+			<li>Design</li>
+			<li>Business</li>
+			<li>Sys Admin</li>
+			<li>Miscellanea</li>
+			<li>Archive</li>
+		</ul>
+	</nav>
 
-</body>
+	<body>
+		<%= yield %>
+	</body>
 </html>
