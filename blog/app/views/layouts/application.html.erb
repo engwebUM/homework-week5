@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Blog</title>
+	  <title>Group Buddies Blog</title>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
 
-	<nav>
-		<ul>
-			<li>All</li>
-			<li>Development</li>
-			<li>Design</li>
-			<li>Business</li>
-			<li>Sys Admin</li>
-			<li>Miscellanea</li>
-			<li>Archive</li>
-		</ul>
-	</nav>
-
 	<body>
-		<%= yield %>
+		<div class="container">
+			<div class="header">
+				<div class="topbar">
+					<%= image_tag("logo-15c19284886b7a7c75b7cb69f0ae07e4.png", :alt => "groupbuddies", :class => "logo") %>
+					<%= image_tag("heart-small-f50c3e44fa78b838c057170a94c5ec7c.png", :alt => "like", :class => "like") %>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="#">All</a></li> /
+						<li><a href="#">Development</a></li> /
+						<li><a href="#">Design</a></li> /
+						<li><a href="#">Business</a></li> /
+						<li><a href="#">Sys Admin</a></li> /
+						<li><a href="#">Miscellanea</a></li> /
+						<li><a href="#">Archive</a></li>
+					</ul>
+				</nav>
+				
+				<h2 class="slogan">Sharing ideas can change the world. It definitely changes us</h2>
+			</div>
+
+			<%= yield %>
+
+
+			<div class="footer">
+				<div class="bluebar"><h4>This is our blog, designed to share our thoughts about the job we love.</h4></div>
+				<nav>
+					<ul>
+						<li><a href="#">All</a></li> /
+						<li><a href="#">Development</a></li> /
+						<li><a href="#">Design</a></li> /
+						<li><a href="#">Business</a></li> /
+						<li><a href="#">Sys Admin</a></li> /
+						<li><a href="#">Miscellanea</a></li> /
+						<li><a href="#">Archive</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,3 +1,155 @@
 // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+	width: 50%;
+	margin: auto;
+}
+
+.header .topbar{
+	height: 50px;
+	padding-top: 20px;
+}
+
+.header .topbar .logo{
+	float: left;
+}
+
+.header .topbar .like{
+	float: right;
+}
+
+nav{
+	display: block;
+	clear: both;
+	background-color: #f6f6f8;
+	width: 151%;
+	height: 100px;
+	margin-left: -1000px;
+	padding-left: 1000px;
+}
+
+nav ul{
+	padding-top: 40px;
+	margin-left: 80px;
+}
+
+nav ul li{
+	display: inline;
+	font-weight: bolder;
+	color: #767676;
+}
+
+nav ul li a{
+	color: #767676;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: #0091da;
+	text-decoration: underline;
+}
+
+.slogan{
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+	color: #c2c2c2;
+	margin-bottom: 80px;
+	font-style: italic;
+}
+
+.post{
+	margin-bottom: 350px;
+}
+
+.postbullet{
+	margin-left: -80px;
+}
+
+.posttitle{
+	font-size: 40pt;
+	margin-top: -65px;
+}
+
+.postdate{
+	color: #767676;
+	font-size: 20pt;
+	font-style: italic;
+	margin-top: -30px;
+}
+
+.postbody{
+	font-size: 20pt;
+}
+
+.commentlink{
+	font-size: 20pt;
+	font-style: italic;
+	color: #767676;
+}
+
+.hirelink{
+	font-size: 20pt;
+	text-align: center;
+}
+
+.hirelink a{
+	color: #0091da;
+	text-decoration: underline;
+}
+
+hr{
+	border:none;
+  	border-top:1px dotted #767676;
+  	height:1px;
+  	margin-top: 20px;
+  	margin-bottom: 20px;  
+}
+
+.authorimg{
+	float: left;
+}
+
+.authorinfo{
+	float: left;
+	margin-left: 40px;
+}
+
+.authorinfo .aboutauthor{
+	margin-top: 0px;
+	color: #0091da;
+}
+
+.authorinfo .authordescription{
+	font-size: 20pt;
+	width: 500px;
+}
+
+.readmore{
+	color: #767676;
+	font-size: 15pt;
+	font-style: italic;
+}
+
+.readmore a{
+	color: #767676;
+	text-decoration: underline;
+}
+
+.footer{
+	margin-top: 100px;
+
+}
+
+.footer .bluebar{
+	background-color: #0091da;
+	width: 140%;
+	margin-left: -1000px;
+	padding-left: 1080px;
+	padding-top: 10px;
+	height: 80px;
+	margin-bottom: -15px;
+	font-size: 15pt;
+}
